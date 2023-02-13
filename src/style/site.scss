@@ -1,0 +1,208 @@
+body {
+    background-color: #00000C;
+    color: white;
+}
+
+.modal-content {
+    background-color: #11111C;
+
+    .carousel {
+        margin: 0.5rem -1rem;
+        height: 30vh;
+
+        .carousel-inner {
+            height: 100%;
+
+            .carousel-item {
+                height: 100%;
+                background-color: rgba($color: #555, $alpha: 0.1);
+
+                img{
+                    height: 100%;
+                    width: auto;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+
+.modal-dialog {
+    .modal.fade & {
+      transform: scale(.8);
+    }
+    .modal.show & {
+      transform: scale(1);
+    }
+  }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba($color: #fff, $alpha: 0.1);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.personal-content {
+    section {
+        height: 80vh;
+
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        &:nth-child(odd) {
+            justify-content: start;
+        }
+          
+        &:nth-child(even) {
+            justify-content: end;
+        }
+
+        &:last-child {
+            margin-bottom: 10vh;
+        }
+    }
+
+    .personal-card {
+        min-height: 40vh;
+        max-height: 80vh;
+        min-width: 40vw;
+        max-width: 50vw;
+        background-color: black;
+        padding: 2rem;
+        margin: 5vw;
+        border-radius: 0.25rem;
+        overflow: auto;
+        z-index: 2;
+    }
+
+    .personal-background {
+        position: fixed;
+        min-height: 100vh;
+        min-width: 100vw;
+        opacity: 0;
+        transition: opacity 0.1s;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+}
+
+.projects-content {
+
+    section {
+        &.platform-section{
+            margin: 10vh 0 5vh 0;
+        }
+
+        &.project-section {
+            margin: 5vh 0;
+        }
+    }
+
+    .btn-platform-container {
+        margin: 0.5rem 2.5vw;
+
+        .btn-platform {
+            background-color: rgba($color: #fff, $alpha: 0);
+            border: none;
+            transition: transform 0.1s;
+        }
+
+        &:hover .btn-platform {
+           transform: scale(1.2);
+        }
+
+        &:active .btn-platform {
+            transform: scale(0.8);
+         }
+    }
+
+    .project-container {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        transition: height 0.1s;
+        background-color:  rgba($color: darkorchid, $alpha: 0.1);
+        box-shadow: 0px 0px 40px 40px rgba($color: darkorchid, $alpha: 0.1);
+        overflow: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .list-image {
+            padding: 0;
+            width: 18rem;
+        }
+
+        &:empty {
+            height: 2rem; 
+        }
+    }
+
+    .project-live-view-list {
+        margin: auto 1rem;
+        columns: 3;
+        -webkit-columns: 3;
+        -moz-columns: 3;
+    }
+}
+
+.switch-view-btn {
+    position: fixed;
+    top : auto;
+    left : auto;
+    bottom: 0;
+    right: 0;
+    margin: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .projects-content {
+        .btn-platform-container {
+            margin: 0.5rem 1vw;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+	.personal-content {
+        .personal-card {
+            max-width: 100vw;
+            margin: 2.5vw;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projects-content {
+        .btn-platform-container {
+            margin: 0.5rem 0.25rem;
+        }
+    }
+}

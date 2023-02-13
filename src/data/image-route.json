@@ -1,0 +1,82 @@
+[
+    {
+        "folder": "ai_test",
+        "images": ["aiGame.gif"]
+    },
+    {
+        "folder": "batch_audio_remover",
+        "images": ["audioRemoverBash.png"]
+    },
+    {
+        "folder": "discord_bot",
+        "images": []
+    },
+    {
+        "folder": "emotion_recognition",
+        "images": ["emotionDetection.png"]
+    },
+    {
+        "folder": "ggj_2018",
+        "images": ["ggj2018.png"]
+    },
+    {
+        "folder": "ggj_2019",
+        "images": ["ggj2019.png"]
+    },
+    {
+        "folder": "ggj_2022",
+        "images": []
+    },
+    {
+        "folder": "ghj",
+        "images": ["ghj.png"]
+    },
+    {
+        "folder": "infinite_runner",
+        "images": ["infiniteRunner.png"]
+    },
+    {
+        "folder": "legacy_system_adapter",
+        "images": ["ninewells.png"]
+    },
+    {
+        "folder": "mac_printer_installer",
+        "images": []
+    },
+    {
+        "folder": "mobile_game",
+        "images": ["mobileGame.png"]
+    },
+    {
+        "folder": "motion_tracking_camera",
+        "images": ["trackingCameraCloseUp.gif"]
+    },
+    {
+        "folder": "outlook_add-in",
+        "images": []
+    },
+    {
+        "folder": "physics_game",
+        "images": []
+    },
+    {
+        "folder": "printer_failure_detection",
+        "images": ["printFailureDetection.png"]
+    },
+    {
+        "folder": "secure_messaging",
+        "images": ["secureMessageing.png"]
+    },
+    {
+        "folder": "shareportals",
+        "images": []
+    },
+    {
+        "folder": "word_scramble_game",
+        "images": []
+    },
+    {
+        "folder": "word_scroll_game",
+        "images": ["webGame.png"]
+    }
+]

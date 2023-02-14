@@ -1,7 +1,70 @@
 [
     {
-        "name": "",
-        "primary": false,
-        "filteringOn": false
+        "name": "javascript",
+        "primary": true
+    },
+    {
+        "name": "typescript",
+        "primary": true
+    },
+    {
+        "name": "csharp",
+        "primary": true
+    },
+    {
+        "name": "html",
+        "primary": true
+    },
+    {
+        "name": "bootstrap",
+        "primary": true
+    },
+    {
+        "name": "php",
+        "primary": false
+    },
+    {
+        "name": "sass",
+        "primary": true
+    },
+    {
+        "name": "python",
+        "primary": false
+    },
+    {
+        "name": "reactjs",
+        "primary": false
+    },
+    {
+        "name": "nodejs",
+        "primary": false
+    },
+    {
+        "name": "aspnet",
+        "primary": true
+    },
+    {
+        "name": "ejs",
+        "primary": false
+    },
+    {
+        "name": "swiftui",
+        "primary": false
+    },
+    {
+        "name": "css",
+        "primary": true
+    },
+    {
+        "name": "mysql",
+        "primary": false
+    },
+    {
+        "name": "bash",
+        "primary": false
+    },
+    {
+        "name": "java",
+        "primary": false
     }
 ]

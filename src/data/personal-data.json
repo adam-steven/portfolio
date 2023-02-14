@@ -1,7 +1,27 @@
 [
     {
-        "title": "",
+        "title": "Overview",
         "description": "",
-        "imagePath": ""
+        "imagePath": "ggj2018.png"
+    },
+    {
+        "title": "Work",
+        "description": "",
+        "imagePath": "ggj2018.png"
+    },
+    {
+        "title": "Education",
+        "description": "",
+        "imagePath": "ggj2018.png"
+    },
+    {
+        "title": "Merits",
+        "description": "",
+        "imagePath": "ggj2018.png"
+    },
+    {
+        "title": "Interests",
+        "description": "",
+        "imagePath": "ggj2018.png"
     }
 ]

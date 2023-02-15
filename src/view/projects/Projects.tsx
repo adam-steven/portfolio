@@ -8,10 +8,11 @@ import PlatformList from './PlatformList';
 import WorkItem, {Environment} from '../../model/WorkItem';
 import ProjectList from './ProjectList';
 import DetailsModal from './DetailsModal';
+import { loadPlatformData } from '../../controller/LoadData';
 
 export default function Projects({...itemInView}: WorkItem) {
 
-  const platforms: Array<Platform> = TempPlatform();
+  const platforms: Array<Platform> = loadPlatformData();
   const workItems: Array<WorkItem> = TempWorkItem();
 
   return (
@@ -35,30 +36,6 @@ export default function Projects({...itemInView}: WorkItem) {
 
 
 //#region test function
-
-function TempPlatform(): Array<Platform> {
-  const tempPlatforms: Array<Platform>  = new Array<Platform>();
-
-  tempPlatforms.push(new Platform("javascript", true));
-  tempPlatforms.push(new Platform("typescript", true));
-  tempPlatforms.push(new Platform("csharp", true));
-  tempPlatforms.push(new Platform("html", true));
-  tempPlatforms.push(new Platform("bootstrap", true));
-  tempPlatforms.push(new Platform("php", true));
-  tempPlatforms.push(new Platform("sass", true));
-  tempPlatforms.push(new Platform("python", true));
-  tempPlatforms.push(new Platform("reactjs", true));
-  tempPlatforms.push(new Platform("nodejs", true));
-  tempPlatforms.push(new Platform("aspnet", true));
-  tempPlatforms.push(new Platform("ejs", true));
-  tempPlatforms.push(new Platform("swiftui", true));
-  tempPlatforms.push(new Platform("css", true));
-  tempPlatforms.push(new Platform("mysql", true));
-  tempPlatforms.push(new Platform("bash", true));
-  tempPlatforms.push(new Platform("java", true));
-
-  return tempPlatforms;
-}
 
 function TempWorkItem(): Array<WorkItem> {
   const tempWorkItem: Array<WorkItem>  = new Array<WorkItem>();

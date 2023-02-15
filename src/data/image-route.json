@@ -60,11 +60,15 @@
         "images": []
     },
     {
+        "folder": "portfolio_v2",
+        "images": []
+    },
+    {
         "folder": "printer_failure_detection",
         "images": ["printFailureDetection.png"]
     },
     {
-        "folder": "secure_messaging",
+        "folder": "secure_messaging_system",
         "images": ["secureMessageing.png"]
     },
     {

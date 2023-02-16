@@ -5,6 +5,7 @@ import ProjectData from '../data/project-data.json';
 
 import PersonalSectionProp from '../model/PersonalSectionProp';
 import Platform from '../model/Platform';
+import WorkItem, {Environment} from '../model/WorkItem';
 
 export function loadPersonalData(): Array<PersonalSectionProp> {
     const data: Array<PersonalSectionProp> = new Array<PersonalSectionProp>()
@@ -28,7 +29,14 @@ export function loadPlatformData(): Array<Platform> {
     return data;
 }
 
-export function loadProjectData(filter: Array<string>) {
+export function loadProjectData(filter: Array<string>): Array<WorkItem> {
+    const data: Array<WorkItem> = new Array<WorkItem>()
 
+    for (let i = 0; i < ProjectData.length; i++) {
+        const item = ProjectData[i];
+        data.push(new WorkItem(item.name, item.platforms, new Date(item.date), Environment[item.environment as keyof typeof Environment], item.description, item.contribution, item.github))
+    }
+
+    return data;
 }
 

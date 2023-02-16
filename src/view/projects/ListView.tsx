@@ -9,14 +9,14 @@ import WorkItem, {Environment} from '../../model/WorkItem';
 import WorkItemDateGroup from '../../model/WorkItemDateGroup';
 // import ProjectList from './ProjectList';
 import DetailsModal from './DetailsModal';
-import { loadPlatformData } from '../../controller/LoadData';
+import { loadPlatformData, loadProjectData } from '../../controller/LoadData';
 
 //List view of all project sorted by date
 //list items are links, on click => open info modal
 export default function ListView({...itemInView}: WorkItem) {
 
   const platforms: Array<Platform> = loadPlatformData();
-  const workItems: Array<WorkItem> = TempWorkItem();
+  const workItems: Array<WorkItem> = loadProjectData([]);
   const groupedWorkItems: Array<WorkItemDateGroup> = new Array<WorkItemDateGroup>();
 
   const currentYear = new Date(Date.now()).getFullYear();
@@ -64,24 +64,4 @@ function DateList({...group}: WorkItemDateGroup) {
     </section>
   )
 }
-
-//#region test function
-
-function TempWorkItem(): Array<WorkItem> {
-  const tempWorkItem: Array<WorkItem>  = new Array<WorkItem>();
-
-  // tempWorkItem.push(new WorkItem("Batch Audio Remover", ["bash"], Date.now(), Environment.Personal, "", "", "https://github.com/adam-steven/Bash-Audio-Scrubber"));
-  
-  tempWorkItem.push(new WorkItem("AI Test", ["csharp"], new Date(Date.now()), Environment.Education, "hgodfgdfiogdfgio dfuigodfgudfigou dfugiodfgudfio uidfogudiog", "gdfgdfh jk hdfgudh u dfigoudfgio  dufigodfgudifgo  duifgogdufigo", "https://github.com/adam-steven/Game-AI-Comparison"));
-  tempWorkItem.push(new WorkItem("Emotion Recognition", ["csharp"], new Date(Date.now()), Environment.Education, "", "", "https://github.com/adam-steven/AI-Emotion-Detection"));
-
-  // tempWorkItem.push(new WorkItem("Outlook Add-in", ["nodejs", "html", "ejs", "css", "javascript", "bootstrap"], Date.now(), Environment.Work, "", "", ""));
-  for (let index = 0; index < 10; index++) {
-    tempWorkItem.push(new WorkItem("Word Scroll Game", ["html", "css", "javascript", "bootstrap"], new Date(1055113057893), Environment.Work, "", "", ""));
-  }
-
-  return tempWorkItem;
-}
-
-//#endregion
 

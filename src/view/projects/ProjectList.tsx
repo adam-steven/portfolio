@@ -28,7 +28,10 @@ export default function ProjectList({environment, items}: IProjectListProps) {
 function ProjectItem({...workItem}: WorkItem) {
   try {
     const imageFileConfig = Images.find(i => i.folder === workItem.imagesPath);
-    if(!imageFileConfig) { return null; }
+    if(!imageFileConfig) { 
+      console.error(`${workItem.imagesPath} not found`);
+      return null; 
+    }
 
     return (
       <button type='button' className="list-image m-3 card" data-bs-toggle="modal" data-bs-target="#projectModal" data-bs-custom-data={JSON.stringify(workItem)} title={workItem.name}>
@@ -39,5 +42,8 @@ function ProjectItem({...workItem}: WorkItem) {
       </button>
     )
 
-  } catch { return null; }
+  } catch(e) { 
+    console.error(e);
+    return null; 
+  }
 }

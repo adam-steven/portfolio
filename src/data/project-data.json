@@ -2,8 +2,8 @@
     {
         "name": "AI Test",
         "platforms": ["csharp"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2020",
+        "environment": "Education",
         "description": "",
         "contribution": "",
         "github": "https://github.com/adam-steven/Game-AI-Comparison"
@@ -11,8 +11,8 @@
     {
         "name": "Batch Audio Remover",
         "platforms": ["bash"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2021",
+        "environment": "Personal",
         "description": "",
         "contribution": "",
         "github": "https://github.com/adam-steven/Bash-Audio-Scrubber"
@@ -20,17 +20,17 @@
     {
         "name": "Discord Bot",
         "platforms": ["nodejs", "javascript"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2023",
+        "environment": "Personal",
         "description": "",
         "contribution": "",
         "github": ""
     },
     {
         "name": "Emotion Recognition",
-        "platforms": [],
-        "date": "",
-        "environment": "",
+        "platforms": ["csharp"],
+        "date": "1/1/2019",
+        "environment": "Education",
         "description": "",
         "contribution": "",
         "github": "https://github.com/adam-steven/AI-Emotion-Detection"
@@ -38,8 +38,8 @@
     {
         "name": "GGJ 2018",
         "platforms": ["csharp"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2018",
+        "environment": "Personal",
         "description": "",
         "contribution": "",
         "github": "https://globalgamejam.org/2018/games/pierat-radio"
@@ -47,8 +47,8 @@
     {
         "name": "GGJ 2019",
         "platforms": ["csharp"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2019",
+        "environment": "Personal",
         "description": "",
         "contribution": "",
         "github": "https://globalgamejam.org/2019/games/acorn-fling"
@@ -56,8 +56,8 @@
     {
         "name": "GGJ 2022",
         "platforms": ["csharp"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2022",
+        "environment": "Personal",
         "description": "",
         "contribution": "",
         "github": "https://globalgamejam.org/2022/games/driving-democracy-3"
@@ -65,8 +65,8 @@
     {
         "name": "GHJ",
         "platforms": ["javascript", "html", "bootstrap", "css", "mysql", "php"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2020",
+        "environment": "Work",
         "description": "",
         "contribution": "",
         "github": ""
@@ -74,8 +74,8 @@
     {
         "name": "GMTK 2021",
         "platforms": ["csharp"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2021",
+        "environment": "Personal",
         "description": "",
         "contribution": "",
         "github": "https://megahold.itch.io/tever"
@@ -83,17 +83,17 @@
     {
         "name": "Infinite Runner",
         "platforms": ["csharp"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2017",
+        "environment": "Education",
         "description": "",
         "contribution": "",
         "github": "https://github.com/adam-steven/Endless-Runner-Game"
     },
     {
         "name": "Legacy System Adapter",
-        "platforms": [],
-        "date": "",
-        "environment": "",
+        "platforms": ["csharp"],
+        "date": "1/1/2020",
+        "environment": "Work",
         "description": "",
         "contribution": "",
         "github": ""
@@ -101,8 +101,8 @@
     {
         "name": "Mac Printer Installer",
         "platforms": ["swiftui"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2022",
+        "environment": "Work",
         "description": "",
         "contribution": "",
         "github": ""
@@ -110,8 +110,8 @@
     {
         "name": "Mobile Game",
         "platforms": ["java", "google-firebase"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2020",
+        "environment": "Education",
         "description": "",
         "contribution": "",
         "github": "https://github.com/adam-steven/Mobile-Game"
@@ -119,8 +119,8 @@
     {
         "name": "Motion Tracking Camera",
         "platforms": ["python", "aws"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2021",
+        "environment": "Education",
         "description": "",
         "contribution": "",
         "github": "https://github.com/adam-steven/Motion-Tracking-Camera"
@@ -128,8 +128,8 @@
     {
         "name": "Outlook Add-In",
         "platforms": ["ejs", "nodejs", "javascript", "html", "bootstrap", "css"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2022",
+        "environment": "Work",
         "description": "",
         "contribution": "",
         "github": ""
@@ -137,8 +137,8 @@
     {
         "name": "Physics Game",
         "platforms": ["csharp"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2022",
+        "environment": "Personal",
         "description": "",
         "contribution": "",
         "github": ""
@@ -146,8 +146,8 @@
     {
         "name": "Portfolio V2",
         "platforms": ["reactjs", "nodejs", "javascript", "typescript", "html", "bootstrap", "sass", "css"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2023",
+        "environment": "Personal",
         "description": "",
         "contribution": "",
         "github": ""
@@ -155,17 +155,17 @@
     {
         "name": "Printer Failure Detection",
         "platforms": ["python"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2021",
+        "environment": "Education",
         "description": "",
         "contribution": "",
         "github": "https://github.com/adam-steven/3D-Printer-Failure-Detection"
     },
     {
         "name": "Secure Messaging System",
-        "platforms": [],
-        "date": "",
-        "environment": "",
+        "platforms": ["csharp", "mysql"],
+        "date": "1/1/2019",
+        "environment": "Education",
         "description": "",
         "contribution": "",
         "github": "https://github.com/adam-steven/Secure-Messaging-System"
@@ -173,8 +173,8 @@
     {
         "name": "SharePortals",
         "platforms": ["javascript", "csharp", "html", "bootstrap", "sass", "aspnet", "css", "azure"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2023",
+        "environment": "Work",
         "description": "",
         "contribution": "",
         "github": ""
@@ -182,8 +182,8 @@
     {
         "name": "Word Scramble Game",
         "platforms": ["javascript", "typescript", "csharp", "html", "bootstrap", "sass", "aspnet", "css", "mysql"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2023",
+        "environment": "Personal",
         "description": "",
         "contribution": "",
         "github": ""
@@ -191,8 +191,8 @@
     {
         "name": "Word Scroll Game",
         "platforms": ["javascript", "html", "css"],
-        "date": "",
-        "environment": "",
+        "date": "1/1/2021",
+        "environment": "Personal",
         "description": "",
         "contribution": "",
         "github": "https://adam-steven.github.io/webgame/index.html"

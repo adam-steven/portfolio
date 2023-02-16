@@ -18,7 +18,7 @@ export default function DetailsModal({...itemInView}: WorkItem) {
                         <div>
                             <div className='w-100 d-flex flex-row justify-content-between align-items-center'>
                                 <h3 id='project-title'>{itemInView.name}</h3>
-                                <small id='project-date'>{`${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`}</small>
+                                <small id='project-date'>{`Last Updated: ${date.getFullYear()}`}</small>
                             </div>
                             <small id='project-platforms'>{itemInView.platforms.join(', ')}</small>
                         </div>

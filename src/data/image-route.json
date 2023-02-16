@@ -32,6 +32,10 @@
         "images": ["ghj.png"]
     },
     {
+        "folder": "gmtk_2021",
+        "images": []
+    },
+    {
         "folder": "infinite_runner",
         "images": ["infiniteRunner.png"]
     },

@@ -118,7 +118,7 @@
     },
     {
         "name": "Motion Tracking Camera",
-        "platforms": ["python", "aws"],
+        "platforms": ["python", "aws", "php", "html", "javascript"],
         "date": "1/1/2021",
         "environment": "Education",
         "description": "",

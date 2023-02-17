@@ -10,9 +10,12 @@ import WorkItem, {Environment} from '../../model/WorkItem';
 import { loadPlatformData, loadProjectData } from '../../controller/LoadData';
 
 export default function App() {
+  const loadPlatforms = loadPlatformData();
+  const loadWorkItems = loadProjectData();
+
   const [itemInView, setItemInView] = useState(new WorkItem("", [], new Date(), Environment.Personal, "", "", ""));
-  const [platforms, setPlatforms] = useState(loadPlatformData());
-  const [workItems, setWorkItems] = useState(loadProjectData());
+  const [platforms, setPlatforms] = useState(loadPlatforms);
+  const [workItems, setWorkItems] = useState(loadWorkItems);
   
   const location = useLocation();
   useEffect(() => {
@@ -37,11 +40,10 @@ export default function App() {
     //Update the work items to match the new filter
     const activePlatforms = newPlatforms.filter(platform => platform.filteringOn);
     const activePlatformsName: Array<string> = activePlatforms.map(platform => platform.name);
-    const allWorkItems = loadProjectData();
-    const newWorkItems = allWorkItems.filter(workItem => activePlatformsName.some(item => workItem.platforms.includes(item)));
+    const newWorkItems = loadWorkItems.filter(workItem => activePlatformsName.some(item => workItem.platforms.includes(item)));
 
     setPlatforms(newPlatforms);
-    setWorkItems(Boolean(newWorkItems.length) ? newWorkItems : allWorkItems);
+    setWorkItems(Boolean(newWorkItems.length) ? newWorkItems : loadWorkItems);
   }
 
   function personalSectionScroll() {

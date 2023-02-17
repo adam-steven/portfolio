@@ -2,21 +2,17 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 
-import Platform from '../../model/Platform';
 import PlatformList from './PlatformList';
-
-import WorkItem, {Environment} from '../../model/WorkItem';
-import WorkItemDateGroup from '../../model/WorkItemDateGroup';
-// import ProjectList from './ProjectList';
 import DetailsModal from './DetailsModal';
-import { loadPlatformData, loadProjectData } from '../../controller/LoadData';
+
+import WorkItem from '../../model/WorkItem';
+import WorkItemDateGroup from '../../model/WorkItemDateGroup';
+import ProjectsProps from '../../model/ProjectsProps';
 
 //List view of all project sorted by date
 //list items are links, on click => open info modal
-export default function ListView({...itemInView}: WorkItem) {
+export default function ListView({platforms, workItems, togglePlatform, itemInView}: ProjectsProps) {
 
-  const platforms: Array<Platform> = loadPlatformData();
-  const workItems: Array<WorkItem> = loadProjectData([]);
   const groupedWorkItems: Array<WorkItemDateGroup> = new Array<WorkItemDateGroup>();
 
   const currentYear = new Date(Date.now()).getFullYear();
@@ -28,7 +24,7 @@ export default function ListView({...itemInView}: WorkItem) {
   return (
     <>
       <div className='projects-content'>
-        <PlatformList items={platforms} />
+        <PlatformList platforms={platforms} togglePlatform={togglePlatform} />
 
         {
           groupedWorkItems.map((group) => {
@@ -52,7 +48,7 @@ function DateList({...group}: WorkItemDateGroup) {
           {
             group.items.map((item) => {
               return (
-                <li key={uuidv4()}>
+                <li key={item.id}>
                   <button type='button' className="btn btn-link" data-bs-toggle="modal" data-bs-target="#projectModal" data-bs-custom-data={JSON.stringify(item)} title={item.name}>
                     {item.name}
                   </button>

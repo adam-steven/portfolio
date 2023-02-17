@@ -1,7 +1,9 @@
 import React from 'react'
-import Images from '../../data/image-route.json';
-import WorkItem from '../../model/WorkItem';
 import { v4 as uuidv4 } from 'uuid';
+
+import Images from '../../data/image-route.json';
+
+import WorkItem from '../../model/WorkItem';
 
 export default function DetailsModal({...itemInView}: WorkItem) {
 

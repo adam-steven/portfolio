@@ -1,0 +1,4 @@
+mouse light
+better welcome visuals 
+structure card view (like youtube)
+data (text and images)

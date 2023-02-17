@@ -1,28 +1,28 @@
 import React from 'react'
-import { v4 as uuidv4 } from 'uuid';
-import Platform from '../../model/Platform';
 
-interface IPlatformListProps {
-  items: Array<Platform>;
-}
+import PlatformItemProps from '../../model/PlatformItemProps';
+import PlatformListProps from '../../model/PlatformListProps';
 
-export default function PlatformList({items} : IPlatformListProps) {
+export default function PlatformList({platforms, togglePlatform}: PlatformListProps) {
   return (
     <section className='platform-section w-100 d-flex d-row flex-wrap justify-content-around align-items-center'>
        {
-        items.map((item) => { 
-          return <PlatformItem key={uuidv4()} {...item}/>
+        platforms.map((item) => { 
+          return <PlatformItem key={item.id} platform={item} togglePlatform={togglePlatform}/>
         })
       }
     </section>
   )
 }
 
-function PlatformItem({...platform}: Platform) {
+function PlatformItem({platform, togglePlatform}: PlatformItemProps) {
+  function handlePlatformClick() {
+    togglePlatform(platform.name);
+  }
+
   return (
     <div className="btn-platform-container">
-      <button type='button' className={`btn btn-lg btn-platform platform-icon ${platform.name}`} title={`filter for ${platform.name}`} data-primary={platform.primary} data-filter={platform.filteringOn}></button>
+      <button type='button' onClick={handlePlatformClick} className={`btn btn-lg btn-platform platform-icon ${platform.name} ${platform.filteringOn ? "selected" : ""}`} title={`filter for ${platform.name}`} data-primary={platform.primary} data-filter={platform.filteringOn}></button>
     </div>
-    
   )
 }

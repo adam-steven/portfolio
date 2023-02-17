@@ -7,8 +7,12 @@ import Projects from '../projects/Projects';
 
 import WorkItem, {Environment} from '../../model/WorkItem';
 
+import { loadPlatformData, loadProjectData } from '../../controller/LoadData';
+
 export default function App() {
   const [itemInView, setItemInView] = useState(new WorkItem("", [], new Date(), Environment.Personal, "", "", ""));
+  const [platforms, setPlatforms] = useState(loadPlatformData());
+  const [workItems, setWorkItems] = useState(loadProjectData());
   
   const location = useLocation();
   useEffect(() => {
@@ -23,6 +27,22 @@ export default function App() {
       window.removeEventListener('scroll', personalSectionScroll);
     }
   }, [location]);
+
+  function togglePlatform(name: string) {
+    //Toggle the click platform
+    const newPlatforms = [...platforms];
+    const platform = newPlatforms.find(platform => platform.name === name);
+    if(platform) { platform.filteringOn = !platform.filteringOn; }
+
+    //Update the work items to match the new filter
+    const activePlatforms = newPlatforms.filter(platform => platform.filteringOn);
+    const activePlatformsName: Array<string> = activePlatforms.map(platform => platform.name);
+    const allWorkItems = loadProjectData();
+    const newWorkItems = allWorkItems.filter(workItem => activePlatformsName.some(item => workItem.platforms.includes(item)));
+
+    setPlatforms(newPlatforms);
+    setWorkItems(Boolean(newWorkItems.length) ? newWorkItems : allWorkItems);
+  }
 
   function personalSectionScroll() {
     const sections = document.getElementsByTagName("section");
@@ -55,8 +75,8 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Personal />} />
       <Route path="/personal" element={<Personal />} />
-      <Route path="/projects" element={<Projects {...itemInView} />} />
-      <Route path="/list" element={<ListView {...itemInView} />} />
+      <Route path="/projects" element={<Projects platforms={platforms} workItems={workItems} togglePlatform={togglePlatform} itemInView={itemInView} />} />
+      <Route path="/list" element={<ListView platforms={platforms} workItems={workItems} togglePlatform={togglePlatform} itemInView={itemInView} />} />
     </Routes>
   )
 }

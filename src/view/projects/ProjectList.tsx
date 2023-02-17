@@ -1,23 +1,19 @@
 import React from 'react'
-import { v4 as uuidv4 } from 'uuid';
 
 import Images from '../../data/image-route.json';
-import WorkItem, {Environment} from '../../model/WorkItem';
 
-interface IProjectListProps {
-    environment: Environment;
-    items: Array<WorkItem>;
-}
+import ProjectListProps from '../../model/ProjectListProps';
+import WorkItem from '../../model/WorkItem';
 
-export default function ProjectList({environment, items}: IProjectListProps) {
+export default function ProjectList({environment, workItems}: ProjectListProps) {
   return (
     <section className='project-section'>
         <h3 className='my-2 mx-3'>{environment.charAt(0).toUpperCase() + environment.slice(1)}</h3>
         <hr className='mx-3'/>
         <div className='project-container'>
           {
-            items.map((item) => {
-              return <ProjectItem key={uuidv4()} {...item}/>
+            workItems.map((item) => {
+              return <ProjectItem key={item.id} {...item}/>
             })
           }
         </div>

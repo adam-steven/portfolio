@@ -1,7 +1,7 @@
 import React from 'react'
-import PersonalSectionProp from '../../model/PersonalSectionProp';
+import PersonalSectionProps from '../../model/PersonalSectionProps';
 
-export default function PersonalSection({...props}: PersonalSectionProp) {
+export default function PersonalSection({...props}: PersonalSectionProps) {
   return (
     <section id={props.title}>
         <div className='personal-card'>

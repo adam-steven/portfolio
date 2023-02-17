@@ -1,5 +1,7 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+
+import NavLinkProps from '../../model/NavLinkProps';
 
 export default function Nav()  {
   return (
@@ -15,12 +17,7 @@ export default function Nav()  {
   )
 }
 
-interface INavLinkProps {
-  href: string;
-  children: ReactNode
-}
-
-function NavLink({href, children, ...props}: INavLinkProps) {
+function NavLink({href, children, ...props}: NavLinkProps) {
   return (
     <Link to={href} className="btn btn-md btn-link" {...props}>{children}</Link>
   )

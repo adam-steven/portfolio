@@ -1,9 +1,8 @@
-import React from 'react'
 import PersonalData from '../data/personal-data.json';
 import PlatformData from '../data/platform-data.json';
 import ProjectData from '../data/project-data.json';
 
-import PersonalSectionProp from '../model/PersonalSectionProp';
+import PersonalSectionProp from '../model/PersonalSectionProps';
 import Platform from '../model/Platform';
 import WorkItem, {Environment} from '../model/WorkItem';
 
@@ -29,7 +28,7 @@ export function loadPlatformData(): Array<Platform> {
     return data;
 }
 
-export function loadProjectData(filter: Array<string>): Array<WorkItem> {
+export function loadProjectData(): Array<WorkItem> {
     const data: Array<WorkItem> = new Array<WorkItem>()
 
     for (let i = 0; i < ProjectData.length; i++) {

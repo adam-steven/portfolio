@@ -2,11 +2,11 @@ import React from 'react'
 import { v4 as uuidv4 } from 'uuid';
 import { loadPersonalData } from '../../controller/LoadData';
 
-import PersonalSectionProp from '../../model/PersonalSectionProp';
+import PersonalSectionProps from '../../model/PersonalSectionProps';
 import PersonalSection from './PersonalSection';
 
 export default function personal() {
-  const sections: Array<PersonalSectionProp> = loadPersonalData();
+  const sections: Array<PersonalSectionProps> = loadPersonalData();
 
   return (
     <div className='personal-content'>

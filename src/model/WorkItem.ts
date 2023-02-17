@@ -1,4 +1,7 @@
+import { v4 as uuidv4 } from 'uuid';
+
 interface IWorkItem {
+    id: string;
     name: string;
     platforms: Array<string>;
     date: Date;
@@ -10,6 +13,7 @@ interface IWorkItem {
 }
 
 export default class WorkItem implements IWorkItem {
+    id: string;
     name: string;
     platforms: Array<string>;
     date: Date;
@@ -20,6 +24,7 @@ export default class WorkItem implements IWorkItem {
     github: string;
 
     constructor(name: string, platforms: Array<string>, date: Date, environment: Environment, description: string, contribution: string, github: string) {
+        this.id = uuidv4();
         this.name = name.trim();
         this.platforms = platforms;
         this.date = date;

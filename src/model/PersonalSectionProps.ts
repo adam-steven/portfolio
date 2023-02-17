@@ -1,10 +1,10 @@
-interface IPersonalSectionProp {
+interface IPersonalSectionProps {
     title: string;
     description: string;
     imagePath: string;
 }
 
-export default class PersonalSectionProp implements IPersonalSectionProp {
+export default class PersonalSectionProps implements IPersonalSectionProps {
     title: string;
     description: string;
     imagePath: string;

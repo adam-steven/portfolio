@@ -60,8 +60,9 @@ export default function App() {
       const elemPosition = Math.abs(windowCenter - elemCenter);
   
       let sectionOpacity = Math.round((1 - (elemPosition / windowCenter)) * 100) / 100;
-      sectionOpacity = Math.max(sectionOpacity, 0);
-  
+      sectionOpacity = Math.max(Math.min(sectionOpacity, 1), 0);
+      sectionOpacity = 1- (Math.cos(Math.PI * sectionOpacity) + 1) / 2;
+
       sectionImage.style.opacity = sectionOpacity.toString();
     }
   }

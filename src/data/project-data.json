@@ -13,8 +13,8 @@
         "platforms": ["bash"],
         "date": "1/1/2021",
         "environment": "Personal",
-        "description": "",
-        "contribution": "",
+        "description": "A Bash shell automated program designed to streamline the process of sanitizing large video datasets for AI training and sharing. Specifically, the program is designed to strip audio from every file within a specified folder, creating a new folder with the audio-free versions of all MP4 files contained in the original directory. Using this program significantly reduced the amount of time and effort required to prepare large video datasets for use in AI applications.",
+        "contribution": "As the sole developer of this Bash program, I gained valuable experience in path selection, file gathering/processing, and user safety verification. I learned how to identify directories and files, extract and manipulate data efficiently, and implement safety measures to prevent unintended damage or data loss. The experience was rewarding and allowed me to develop my Bash scripting skills. The final product is a reliable tool for anyone looking to sanitize large video datasets for AI training and sharing.",
         "github": "https://github.com/adam-steven/Bash-Audio-Scrubber"
     },
     {
@@ -193,8 +193,8 @@
         "platforms": ["javascript", "html", "css"],
         "date": "1/1/2021",
         "environment": "Personal",
-        "description": "",
-        "contribution": "",
+        "description": "An infinite word scrolling website game. This project began as a JavaScript-heavy website imagined to be a pointless experience for users to find, question, and talk about. However, as development progressed, we added 'find the secrets' game elements to create a more engaging experience for players. The objective of the game was to uncover all of the unique words hidden within the ever-scrolling digital landscape.",
+        "contribution": "Working in a team of 3 members, I was the main developer for this project. Having the responsibility of bringing the site manager's vision to life: adapting to their new ideas and constructive critiques while also standing my ground in preventing feature creep on what was a small fun side-project. In addition, I collaborated with the idea/asset creator to integrate their creations into the game and create a seamless experience for the player. Overall, I am proud of the contributions that our team made to this project, and I believe that our collaboration had resulted in an entertaining game experience.",
         "github": "https://adam-steven.github.io/webgame/index.html"
     }
 ]

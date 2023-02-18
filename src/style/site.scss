@@ -216,7 +216,7 @@ body {
 
             .card-img-top {
                 width: 100%;
-                height: 22vmin;
+                height: 12rem;
                 object-fit: cover;
                 transition: transform 0.2s;
             }
@@ -265,14 +265,6 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-    .projects-content {
-        .project-container {
-            .list-image .card-img-top {
-                height: 30vmin;
-            }
-        }
-    }
-
 	.personal-content {
         .personal-card {
             max-width: 100vw;
@@ -285,12 +277,6 @@ body {
     .projects-content {
         .btn-platform-container {
             margin: 0.5rem 0.25rem;
-        }
-
-        .project-container {
-            .list-image .card-img-top {
-                height: 40vmin;
-            }
         }
     }
 

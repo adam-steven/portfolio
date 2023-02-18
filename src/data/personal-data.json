@@ -1,27 +1,27 @@
 [
     {
         "title": "Overview",
-        "description": "",
+        "description": "A full-stack website developer with a first-class degree in computing from the University of Abertay. I have experience developing programs and websites for small companies and currently work full-time as a Full Stack Developer in Glasgow. I have achieved notable accomplishments, including winning Abertay's NCR prize in Computing, and completing the AWS-Academy Cloud Foundation course. My interests include game development and participating in game jams and hackathons. I am enthusiastic about personal growth and constantly seeking new challenges and opportunities to improve my skills.",
         "imagePath": "ggj2018.png"
     },
     {
         "title": "Work",
-        "description": "",
+        "description": "During my time at university, I had the opportunity to take on contract work, creating programs and websites for small companies. These experiences gave me a solid foundation in learning and developing for unique problems and helped me to develop my knowledge in both UX design and software development.\nCurrently, I am working full time in Glasgow as a Full stack developer, where I have been able to hone my skills further. I have been mainly using ASP.Net during the past few years, working on developing and maintaining an adaptable information management web application. However, I am also comfortable working with other technologies, and I enjoy taking on NodeJS projects in my spare time.\nThroughout my career, I have worked on a range of projects, from simple websites to complex applications, and I have always strived to deliver high-quality work that meets the needs of my clients. With my strong background in web development and my ability to work with a range of technologies, I am confident that I can take on any project and deliver outstanding results.",
         "imagePath": "ggj2019.png"
     },
     {
         "title": "Education",
-        "description": "",
+        "description": "My education has been both fulfilling and challenging. I graduated from The University of Abertay in the summer of 2021, earning a first-class degree in Computing. During this time, I developed a solid foundation in various computing concepts, including programming, algorithms, data structures, and software engineering. I also gained practical experience working on a range of projects that challenged my critical thinking skills and helped me to develop my technical abilities.\nFor my honours project, I developed a 3D Printer Failure Detection system using OpenCV in Python. This project was an excellent opportunity to apply the skill that I had built up in programming to a real-world problem, and I was proud of the final results.\nPrior to university, I attended Marr College, where I earned seven higher qualifications and one advanced higher qualification, providing me with a solid foundation in mathematics, design, and computing concepts.",
         "imagePath": "ggj2018.png"
     },
     {
         "title": "Merits",
-        "description": "",
+        "description": "Throughout my academic and personal life, I have achieved several notable accomplishments that have helped me develop into the person I am today. One of my most significant achievements was earning Abertay's NCR prize in Computing for my honours project. This award recognized the demanding work and dedication I put into developing a computer vision project. Winning the prize was a tremendous honour and further reinforced my passion for the field of computing.\nIn addition to my academic achievements, I have completed the AWS - Academy cloud foundation course, which has given me an in-depth understanding of cloud computing and the practical skills necessary to work with cloud-based solutions. This course has been instrumental in keeping me up to date with the latest technologies and has expanded my skillset.",
         "imagePath": "ggj2019.png"
     },
     {
         "title": "Interests",
-        "description": "",
+        "description": "My personal interests reflect my passion for learning and personal growth. I have always had a keen interest in game development, and I am constantly working on side-projects to improve my UX and coding techniques. Game development provides me with a creative outlet where I can bring my ideas to life and explore modern technologies outside of web development.\nTo further enhance my skills, I frequently participate in game jams and hackathons, which are excellent opportunities to collaborate with other developers. I enjoy the group working aspects of these events and find that the collaborative nature of these projects allows me to gain new insights and perspectives.\nIn addition to my interest in game development, I am currently learning Malay, which is a way for me to connect with my family's heritage. I find learning a new language to be challenging but rewarding, and I enjoy the process of exploring a new culture through its language. ",
         "imagePath": "ggj2018.png"
     }
 ]

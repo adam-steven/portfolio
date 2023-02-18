@@ -17,6 +17,10 @@ export default function PlatformList({platforms, togglePlatform}: PlatformListPr
 
 function PlatformItem({platform, togglePlatform}: PlatformItemProps) {
   function handlePlatformClick() {
+    //unfocus on click
+    const btn = document.activeElement as HTMLElement;
+    if(btn) { btn.blur(); }
+
     togglePlatform(platform.name);
   }
 

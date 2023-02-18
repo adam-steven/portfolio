@@ -2,6 +2,7 @@ body {
     background-color: #00000C;
     color: white;
     overflow-x: hidden;
+    font-family: "Space Mono", monospace;
 }
 
 .modal-content {
@@ -106,6 +107,23 @@ body {
 
         &:last-child {
             margin-bottom: 10vh;
+        }
+    }
+
+    #title-container {
+        margin-top: auto;
+        margin-left: 15vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+
+        h1 {
+            font-size: calc(2rem + 1.5vw);
+        }
+
+        small {
+            font-size: calc(0.1rem + 1.5vw);
         }
     }
 
@@ -234,6 +252,20 @@ body {
     .projects-content {
         .btn-platform-container {
             margin: 0.5rem 0.25rem;
+        }
+    }
+
+    .personal-content {
+        #title-container {
+            margin-left: 3rem;  
+
+            h1 {
+                font-size: calc(1.4rem + 1.5vw);
+            }
+    
+            small {
+                font-size: 0.8rem;
+            }
         }
     }
 }

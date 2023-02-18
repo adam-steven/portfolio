@@ -7,11 +7,13 @@ import PersonalSection from './PersonalSection';
 
 export default function personal() {
   const sections: Array<PersonalSectionProps> = loadPersonalData();
-
   return (
     <div className='personal-content'>
       <section id="welcome" className='welcome-section'>
-        <h1 className='m-auto'>Welcome</h1>
+        <div id="title-container" className='mt-auto d-flex flex-row flex-wrap align-items-end'>
+          <h1 className='mb-3 decode-text' data-value="Welcome">_</h1>
+          <small className='mx-2 mb-3 decode-text opacity-75 flex-grow-1' data-value="Portfolio by Adam Steven">_</small>
+        </div>
       </section>
       
       {

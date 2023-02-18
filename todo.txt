@@ -1,3 +1,4 @@
-better welcome visuals 
 structure card view (like youtube)
 data (text and images)
+
+finlay: clean up look (navbar, filter btns, etc...)

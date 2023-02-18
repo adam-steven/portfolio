@@ -20,6 +20,7 @@ export default function App() {
   const location = useLocation();
   useEffect(() => {
     if(document.querySelector(".personal-content")) { 
+      decodeWelcomeEffect();
       window.addEventListener('scroll', personalSectionScroll);
     }
 
@@ -47,6 +48,29 @@ export default function App() {
 
     setPlatforms(newPlatforms);
     setWorkItems(Boolean(newWorkItems.length) ? newWorkItems : loadWorkItems);
+  }
+
+  function decodeWelcomeEffect() {
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const decodeTexts = document.getElementsByClassName("decode-text");
+
+    for (let i = 0; i < decodeTexts.length; i++) {
+      const elem = decodeTexts[i];
+      const elemDataVal = elem.getAttribute("data-value");
+      if(!elemDataVal) { continue; }
+      
+      let iterations: number = 0;
+      const interval = setInterval(() => {
+        elem.textContent = elemDataVal.split('')
+        .map((_, index) => {
+          if(index < iterations) { return elemDataVal[index]; }
+          return letters[Math.floor(Math.random() * 26)]
+        }).join('');
+
+        if(iterations >= elemDataVal.length) { clearInterval(interval); }
+        iterations += 3;
+      }, 80);
+    }
   }
 
   function personalSectionScroll() {

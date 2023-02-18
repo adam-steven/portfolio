@@ -23,6 +23,9 @@ export default function App() {
       window.addEventListener('scroll', personalSectionScroll);
     }
 
+    const mouseBlob = document.getElementById('mouse-blob');
+    if(mouseBlob) { document.body.onpointermove = (event) => { moveMouseBlob(event as PointerEvent, mouseBlob)}}
+
     const projectModal = document.getElementById('projectModal');
     if(projectModal) { projectModal.addEventListener('show.bs.modal', (event) => { displayProjectInfo(event as MouseEvent)}); }
 
@@ -74,13 +77,25 @@ export default function App() {
     setItemInView(dataObj);
   }
 
+  function moveMouseBlob(event: PointerEvent, mouseBlob: HTMLElement) {
+    const { clientX, clientY } = event;
+
+    mouseBlob.animate ({
+      left: `${clientX}px`,
+      top: `${clientY}px`
+    }, {duration: 2000, fill: "forwards"});
+  }
+
   return (
+    <>
+    <div id="mouse-blob"></div>
     <Routes>
       <Route path="/" element={<Personal />} />
       <Route path="/personal" element={<Personal />} />
       <Route path="/projects" element={<Projects platforms={platforms} workItems={workItems} togglePlatform={togglePlatform} itemInView={itemInView} />} />
       <Route path="/list" element={<ListView platforms={platforms} workItems={workItems} togglePlatform={togglePlatform} itemInView={itemInView} />} />
     </Routes>
+    </>
   )
 }
 

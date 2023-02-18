@@ -1,6 +1,7 @@
 body {
     background-color: #00000C;
     color: white;
+    overflow-x: hidden;
 }
 
 .modal-content {
@@ -27,7 +28,6 @@ body {
     }
 }
 
-
 .modal-dialog {
     .modal.fade & {
       transform: scale(.8);
@@ -43,22 +43,49 @@ body {
     width: 0.5rem;
     height: 0.5rem;
   }
-  
+
   /* Track */
   ::-webkit-scrollbar-track {
     background: rgba($color: #fff, $alpha: 0.1);
   }
-  
+
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 5px;
   }
-  
+
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+#mouse-blob {
+    background: linear-gradient(to right, aquamarine, darkorchid);
+    height: 200px;
+    aspect-ratio: 1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    animation: rotate 20s infinite;
+    z-index: 3;
+    filter: blur(150px);
+    pointer-events: none;
+}
+
+@media (hover: none) {
+    #mouse-blob {
+        display: none;
+    }
+}
+
+@keyframes rotate {
+    from { rotate: 0deg; }
+    50% { scale: 1 1.15; }
+    to { rotate: 360deg;}
+}
 
 .personal-content {
     section {
@@ -72,7 +99,7 @@ body {
         &:nth-child(odd) {
             justify-content: start;
         }
-          
+
         &:nth-child(even) {
             justify-content: end;
         }
@@ -165,7 +192,7 @@ body {
         }
 
         &:empty {
-            height: 2rem; 
+            height: 2rem;
         }
     }
 

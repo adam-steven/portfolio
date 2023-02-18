@@ -20,7 +20,7 @@ export default function App() {
   const location = useLocation();
   useEffect(() => {
     if(document.querySelector(".personal-content")) { 
-      decodeWelcomeEffect();
+      window.addEventListener('load', decodeWelcomeEffect);
       window.addEventListener('scroll', personalSectionScroll);
     }
 

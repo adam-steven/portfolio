@@ -130,8 +130,8 @@
         "platforms": ["ejs", "nodejs", "javascript", "html", "bootstrap", "css"],
         "date": "1/1/2022",
         "environment": "Work",
-        "description": "",
-        "contribution": "",
+        "description": "This project was an Outlook Add-in extension for the SharePortals. A powerful tool developed in NodeJs that empowers users to interact with the web application directly from their Outlook email client. The add-in provides seamless integration with the using custom APIs, allowing users to search for emails and save them directly to the SharePortals, streamlining the information management process. Additionally, the add-in enables users to create, update, and relate records directly from Outlook, ensuring that they can work with the web tool without leaving the email client. This level of integration and convenience was developed to help users to stay organized and focused, improving their productivity and making it easier to manage their information.",
+        "contribution": "As the lead developer on the Outlook Add-in extension project, I made significant contributions to the project's success. I learned and developed the Outlook Add-in extension in its entirety, working closely with the designer to create a welcoming UI experience that was consistent with the main web app. Additionally, I worked alongside the API developer to ensure that the correct information was being passed between the two applications, making sure that the add-in was fully integrated with the main web app. Overall, this experience demonstrated my commitment to excellence and my ability to work effectively in a team leading a project.",
         "github": ""
     },
     {
@@ -175,8 +175,8 @@
         "platforms": ["javascript", "csharp", "html", "bootstrap", "sass", "aspnet", "css", "azure"],
         "date": "1/1/2023",
         "environment": "Work",
-        "description": "",
-        "contribution": "",
+        "description": "This information management web tool is a dynamic and powerful platform designed to help users store and manage their data with ease. Developed in ASP.Net, the web tool integrates seamlessly with Microsoft SharePoint and other Office 365 applications to provide users with full access to their stored data. With its robust and flexible architecture, the web tool enables users to create and customize records, store attributes, and attach documents, such as word files, emails, and planner tasks, to their records. In addition, the web tool allows users to establish relationships between different records, giving them the flexibility to configure the system to their specific needs.",
+        "contribution": "As a full stack developer on the Information Management Web Tool project, I played a key role in developing and implementing several features of the web tool. My contributions included debugging and refactoring the application for improved stability and performance. Additionally, I implemented various features such as MS Planner integration, MailChimp integration, a customizable dashboard, and user application themes using Sass. It is a fulfilling experience to see the positive impact I have contribute to this application.",
         "github": ""
     },
     {

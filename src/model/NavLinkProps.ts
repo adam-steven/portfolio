@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 interface INavLinkProps {
     href: string;
-    children: ReactNode
+    children: ReactNode;
 }
 
 export default class NavLinkProps implements INavLinkProps {

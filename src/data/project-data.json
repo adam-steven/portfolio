@@ -139,8 +139,8 @@
         "platforms": ["csharp"],
         "date": "1/1/2022",
         "environment": "Personal",
-        "description": "",
-        "contribution": "",
+        "description": "This physics-based roguelike project developed in Godot, C# was designed you speed in mind. The game featured wave-based stages with three distinct sections, requiring players to dodge, fight, and defeat bosses to progress to the next level. The end of each stage features a shop break, providing players with the opportunity to upgrade and prepare for the next level, which features even more challenging waves. The unique gimmick of this game is the explosive movement, allowing players to move forward with a single key press while bouncing off walls and enemies. This mechanic creates an exciting and fast-paced gameplay experience, where players must make sudden and bold moves to succeed.",
+        "contribution": "As the sole developer of this physics-based roguelike project, I designed and programmed all aspects of the game, from the mechanics to the graphics and sound effects. This project provided an excellent opportunity to learn the C# programming structures that Godot encourages and helped me improve my object-oriented programming methodology. Despite the limited documentation and programming challenges, I remained dedicated to delivering a high-quality game that players would enjoy. This project helped me gain valuable skills that will undoubtedly be useful in my future programming endeavours.",
         "github": ""
     },
     {
@@ -148,7 +148,7 @@
         "platforms": ["reactjs", "nodejs", "javascript", "typescript", "html", "bootstrap", "sass", "css"],
         "date": "1/1/2023",
         "environment": "Personal",
-        "description": "",
+        "description": "This web portfolio was created using ReactJs to showcase some of my understanding of this popular JavaScript framework. As someone who frequently uses React for prototype development, I was eager to demonstrate my skills by building this functional website. And although I have not work on a full-scale project in React, hopefully this project highlights my ability to utilise ReactJs to create dynamic web applications. As a developer, I would be enthusiastic about the opportunity to apply my React expertise to a larger project and further expand my knowledge of this powerful framework.",
         "contribution": "",
         "github": ""
     },
@@ -184,8 +184,8 @@
         "platforms": ["javascript", "typescript", "csharp", "html", "bootstrap", "sass", "aspnet", "css", "mysql"],
         "date": "1/1/2023",
         "environment": "Personal",
-        "description": "",
-        "contribution": "",
+        "description": "This web game project was developed using ASP.Net and combined elements of the popular word game, Wordle, with a word scramble game. The objective was to unscramble as many words as possible within a 5-minute timeframe. The server generated a new set of scrambled words every day, adding to the challenge and excitement of the game. The scoring system rewarded players for finding words with a high number of letters and prompted them to continue searching for new words by generating new scrambled words after each successful guess. Once the time limit expired, the game ended, and players had to wait for the following day to play again. This project highlights my skill in creating an engaging and interactive UX design for website, package in a fun game format.",
+        "contribution": "As the sole developer of this web game project, I designed and programmed a user-friendly interface that allowed anonymous users to play the game without needing to create an account. I created a system to track each user's progress day to day, ensuring a seamless experience for players who returned to the game. I also aimed to developed effective security measures to prevent cheating, such as ensuring that the server-generated scrambled words were not accessible via the web console or that users could not easily access the JS functions through object-orientated design.",
         "github": ""
     },
     {

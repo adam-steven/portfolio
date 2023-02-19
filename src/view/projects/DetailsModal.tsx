@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import Images from '../../data/image-route.json';
 
+import ParagraphProps from '../../model/ParagraphProps';
 import WorkItem from '../../model/WorkItem';
 
 export default function DetailsModal({...itemInView}: WorkItem) {
@@ -27,15 +28,9 @@ export default function DetailsModal({...itemInView}: WorkItem) {
 
                         <hr />
 
-                        <div>
-                            <h5>Description</h5>
-                            <p id='project-description'>{itemInView.description}</p>
-                        </div>
+                        <Paragraph title='Description' body={itemInView.description}/>
 
-                        <div>
-                            <h5>Contribution</h5>
-                            <p id='project-contribution'>{itemInView.contribution}</p>
-                        </div>
+                        <Paragraph title='Contribution' body={itemInView.contribution}/>
 
                     </div>
                     <div className="modal-footer">
@@ -44,6 +39,17 @@ export default function DetailsModal({...itemInView}: WorkItem) {
                     </div>
                 </div>
             </div>
+        </div>
+    )
+}
+
+function Paragraph({title, body}: ParagraphProps) {
+    if(!body) { return null; }
+
+    return (
+        <div>
+            <h5>{title}</h5>
+            <p id={`project-${title.toLowerCase()}`}>{body}</p>
         </div>
     )
 }

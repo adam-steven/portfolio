@@ -1,11 +1,11 @@
 [
     {
-        "name": "AI Test",
+        "name": "Enemy AI Test",
         "platforms": ["csharp"],
         "date": "1/1/2020",
         "environment": "Education",
-        "description": "",
-        "contribution": "",
+        "description": "This project aimed to explore the effectiveness of implementing a weighted finite state machine compared to a standard finite state machine. As the number of states in a finite state machine increase, it becomes more challenging to manage. Therefore, this project sought to test how the weighted version, known for being easier to implement, would compare. A Hotline Miami style game created using Unity and C#. The two AI methods were integrated into the enemy AI and tested on participants to see if they could identify any differences between the two state machines. The results indicated that although users couldn't discern differences between the enemies, the weighted version proved to be more manageable and thus the preferable development option.",
+        "contribution": "I developed the Hotline Miami-style game in Unity using C#, including all of the assets, player control, and random level generation. In addition to the game development, I also implemented both a finite state machine and a weighted finite state machine for the enemy AI. I sourced testers for the project and conducted tests with them to evaluate the effectiveness of the two AI methods. My work on this project showcases my expertise in game development, programming, and project management.",
         "github": "https://github.com/adam-steven/Game-AI-Comparison"
     },
     {
@@ -22,8 +22,8 @@
         "platforms": ["nodejs", "javascript"],
         "date": "1/1/2023",
         "environment": "Personal",
-        "description": "",
-        "contribution": "",
+        "description": "This Discord music bot project was developed using NodeJS and utilizes the YouTube API framework. The bot can search for music on YouTube and join a Discord channel to playing songs on user request. In addition to this, the bot is able to queue songs, play live streams, and detect when everyone has left the channel in order to automatically leave itself, saving processing power for the low-power computers it was designed to run on. This project showcases proficiency in NodeJS and utilizing APIs, as well as the ability to create practical and efficient solutions for real-world problems",
+        "contribution": "As the developer on a team of two, I was responsible for researching, developing and implementing the entire software portion of the Discord music bot project. I conducted research into DiscordJs and the YouTube API framework to design and develop the bot's features with precision. One of my key contributions was implementing a persistent logging system for easy maintenance. Overall, my efforts were critical in creating a practical and user-friendly bot that runs smoothly and efficiently.",
         "github": ""
     },
     {
@@ -31,8 +31,8 @@
         "platforms": ["csharp"],
         "date": "1/1/2019",
         "environment": "Education",
-        "description": "",
-        "contribution": "",
+        "description": "This project focused on the development of an emotion recognition application using C# .NET Core. The objective was to explore various AI computer vision techniques and dataset sanitisation methods to improve prediction accuracy. The resulting application allowed users to upload image files, which were processed by the program to detect faces and predict the emotions associated with each face. Through a thorough analysis of pre-existing emotion detection algorithms and dataset gathering and cleaning techniques, the best methods were implemented to achieve a prediction accuracy of 77%.",
+        "contribution": "My contribution to this project was multi-faceted and involved various aspects of development. I conducted research on emotion detection algorithms and implemented the most suitable ones to accurately predict emotions in images. Additionally, I moderated the AI dataset, ensuring that it was sanitised and suitable for the project's needs.\nAnother critical task was creating the graphical user interface (GUI) for the application. I developed an intuitive and user-friendly interface that allowed users to upload image files and view the emotion predictions for each face. I took a user-centered design approach to ensure that the application was accessible and easy to use.",
         "github": "https://github.com/adam-steven/AI-Emotion-Detection"
     },
     {
@@ -40,8 +40,8 @@
         "platforms": ["csharp"],
         "date": "1/1/2018",
         "environment": "Personal",
-        "description": "",
-        "contribution": "",
+        "description": "As a participant in the 2018 Global Game Jam, my team came together to create a thrilling game in just 48 hours. The project involved navigating a boat through an archipelago while broadcasting a censored radio channel, all while avoiding the police. The game's unique style emulated a news feed of a high-stakes police chase. Using Unity and C#, we created a boat-themed 'chase' game that challenges players to stay afloat for as long as possible.",
+        "contribution": "As one of two developers on a team of four, I was responsible for the character controller, GUI elements, item spawning, and item interaction. While my teammate focused on the enemy's complex AI. My work created a seamless gameplay experience and allowed players to navigate the game with ease. I collaborated closely with the artists and the other developer to ensure the success of our project, which was well received in the event.",
         "github": "https://globalgamejam.org/2018/games/pierat-radio"
     },
     {
@@ -49,8 +49,8 @@
         "platforms": ["csharp"],
         "date": "1/1/2019",
         "environment": "Personal",
-        "description": "",
-        "contribution": "",
+        "description": "As part of the 2019 Global Game Jam, my team developed a challenging VR game in just 48 hours. We were fortunate enough to work with the Acer Mixed Reality VR headset, which allowed us to create a unique and immersive gaming experience. Our game revolved around the concept of interstellar travel, where the player must rotate a planet in 3D space to gain the necessary momentum to propel a seed to the next planet. The ultimate objective of the game is to reach the end planet, thus completing the challenging intergalactic journey.",
+        "contribution": "As the artist in a two-person team, I played a vital role in creating the game world for our VR project, despite the limitations of my computer, which could not support VR. Working closely with the developer, designing visually striking assets, including planets, stars, and animations, which added an interactive element to the game.",
         "github": "https://globalgamejam.org/2019/games/acorn-fling"
     },
     {
@@ -58,8 +58,8 @@
         "platforms": ["csharp"],
         "date": "1/1/2022",
         "environment": "Personal",
-        "description": "",
-        "contribution": "",
+        "description": "This project was a Unity game, created for the 2022 Global Game Jam. The game was developed in just 48 hours and featured a unique integration with the Twitch.tv chat API framework. Using C# programming, we designed the game to allow players on Twitch to participate in group decisions where they would vote on a car, which would then race down one of three different tracks. Each track had a different viewable outcome, and the game would add or remove points based on the group’s decisions. Overall, our game jam submission was a fun experiment that provided a great learning experience for unique APIs.",
+        "contribution": "As one of two developers, I played a critical role in the success of the project by integrating the Twitch.tv chat API voting mechanic as well as producing/sourcing the game assets. My prior API programming skills came in handy for quickly learning and implementing the voting system, which allowed me to pick up the slack of not having a dedicated artist in bringing the game to life with graphics and sounds. Working collaboratively with my team member, we were able to complete the project within the 48-hour time limit and enjoyed a couple of hours playing the game on Twitch with other game jam participants.",
         "github": "https://globalgamejam.org/2022/games/driving-democracy-3"
     },
     {
@@ -67,8 +67,8 @@
         "platforms": ["javascript", "html", "bootstrap", "css", "mysql", "php"],
         "date": "1/1/2020",
         "environment": "Work",
-        "description": "",
-        "contribution": "",
+        "description": "An e-commerce platform for a Malaysian-based small business dealing in perfumes. The main challenge was to ensure that the website was user-friendly, catering to a non-technical client base, while maintaining the client's unique branding. As part of the development process, separate customer and admin interfaces were incorporated, enabling a dynamic product filtering system and product search functionality. To facilitate seamless transactions, the Stripe API was utilized to process payments. The result was a functional, and responsive online store that aimed at providing a hassle-free and enjoyable shopping experience for middle-aged women in Malaysia.",
+        "contribution": "As the sole developer, I designed and developed the online perfume store from scratch, utilizing HTML, PHP, CSS, MySQL, and JavaScript. I also implemented the Stripe transaction API and configured the web host to ensure optimum performance. Throughout the project, I remained committed to the client's vision and the unique style and taste of the Malaysian market.",
         "github": ""
     },
     {
@@ -76,8 +76,8 @@
         "platforms": ["csharp"],
         "date": "1/1/2021",
         "environment": "Personal",
-        "description": "",
-        "contribution": "",
+        "description": "The GMTK 2021 game jam was a thrilling opportunity for my team to showcase our skills and creativity in game development. In just 48 hours, we successfully created a unique and engaging wave-based survival game using Unity C#. Our game featured a gameplay mechanic that allowed the player to capture and link with enemies, adding their stats to their own and becoming stronger in the process. However, the player had to be careful in managing their links and choosing which enemies to capture, as if a linked enemy died, the player would die too. This added an exciting layer of strategy to the gameplay, as players needed to think ahead and make wise decisions about their links. Overall, our submission to the GMTK 2021 game jam was a fantastic experience that challenged us to work collaboratively and think creatively under a tight deadline.",
+        "contribution": "As one of the developers on the team of 3 for the GMTK 2021 game jam submission, I played a critical role in bringing the game to life. My key contributions to the project included the creation of the player controller, the generic stats and weapon system, and the link system. These were essential gameplay features that allowed players to capture and link with enemies to gain their stats and weapons. Working collaboratively with the other developer on the team who was focused on enemy AI, we ensured that the main gameplay feature worked flawlessly. Our close collaboration and communication helped to overcome any technical challenges that we faced and allowed us to deliver a game that was engaging and enjoyable to play. Overall, I am proud of my contributions to the project and grateful for the opportunity to work with a talented team of developers and artists to create something truly special in just 48 hours.",
         "github": "https://megahold.itch.io/tever"
     },
     {
@@ -85,8 +85,8 @@
         "platforms": ["csharp"],
         "date": "1/1/2017",
         "environment": "Education",
-        "description": "",
-        "contribution": "",
+        "description": "As part of my secondary school's game development course, I designed and developed an engaging infinite runner game using Unity and C#. The game features roguelike elements, allowing the player to select a unique ship with varying stats and test their abilities by dodging a plethora of randomly generated obstacle combinations. As the player progresses, the game becomes more challenging, but with the added benefit of unlocking new ships for future runs. This score-based 3D endless runner game showcases my proficiency in C# development and demonstrates my ability to create a enjoyable user experiences.",
+        "contribution": "As the sole developer, I created the entire game, including all assets and level generation. I focused on designing engaging mechanics, a user-friendly interface, and a unique algorithm to generate an endless combination of challenging obstacles. Additionally, I created all the assets and ensured a cohesive visual style. My contributions demonstrate my ability to work independently, take on multiple responsibilities, and deliver a polished final product.",
         "github": "https://github.com/adam-steven/Endless-Runner-Game"
     },
     {
@@ -94,8 +94,8 @@
         "platforms": ["csharp"],
         "date": "1/1/2020",
         "environment": "Work",
-        "description": "",
-        "contribution": "",
+        "description": "This project involved volunteering work for Ninewells Hospital, where the goal was to develop a custom data translator for the legacy system Pecos and an inventory organisation tool. The client relies on Pecos for inventory purchasing but faces the issue of accidental duplicate purchases due to the lack of a proper inventory documentation protocol. Thus, this project required the development of a C# system that could effectively process XML data from Pecos, adapt and modify it as necessary, and store it in the clients preferred inventory organization tool. Aiming to help streamline the clients inventory management processes and reduce the risk of purchasing errors.",
+        "contribution": "As one of the developers in a 5-member team, I played a key role in managing online communication between team members and creating the output of our tool. I used my strong communication skills to ensure that everyone was informed of project developments and timelines, fostering an environment of collaboration and productivity. I was also responsible for designing, implementing and testing the XML output that our tool provided to the inventory organisation tool which involved researching and understanding the documentation for the data structure that the organisation tool required.",
         "github": ""
     },
     {
@@ -103,8 +103,8 @@
         "platforms": ["swiftui"],
         "date": "1/1/2022",
         "environment": "Work",
-        "description": "",
-        "contribution": "",
+        "description": "The Mac printer driver installer project was a tool developed using SwiftUi. Its primary function was to streamline the process of installing and updating printer drivers on a user's Mac computer. The program was designed to automatically grab the most up-to-date driver from a server, install it in the root/cups folder of the user's computer, and run an Apple script to register the driver on the computer. Additionally, the software had the capability to check for driver updates every time the user’s pc started up and notify the user if a new driver was available. The project was a practical solution for users who were needing to use an organisations printers on their personal computers, providing an easy-to-use and efficient tool to streamline the process.",
+        "contribution": "As the sole developer in a team of three, I created the entire Mac version of the printer driver installer based on the designer's spec document. I added features to enhance usability, such as the tool's adaptation to dark and light OS themes, and developed a custom logger for error handling. My contributions were critical in delivering a high-quality, functional solution that met the needs of our team and end-users.",
         "github": ""
     },
     {
@@ -112,8 +112,8 @@
         "platforms": ["java", "google-firebase"],
         "date": "1/1/2020",
         "environment": "Education",
-        "description": "",
-        "contribution": "",
+        "description": "The objective of this portfolio project was to develop an engaging and straightforward Android mobile game in Java, which featured a high-score saving functionality through integration with a Google Firebase Database, reminiscent of arcade score boards. The game leveraged the accelerometers and magnet field sensors of the phone to control the characters, and recorded individual high scores on the device. Furthermore, the application sent notifications to remind users to return and play the game if they had not done so in a few days.",
+        "contribution": "My contributions to this project included setting up the Firebase Database for high score saving, creating the game's assets and mechanics (including the research and implementation of the unique control scheme), and implementing the user notification feature.",
         "github": "https://github.com/adam-steven/Mobile-Game"
     },
     {
@@ -121,8 +121,8 @@
         "platforms": ["python", "aws", "php", "html", "javascript"],
         "date": "1/1/2021",
         "environment": "Education",
-        "description": "",
-        "contribution": "",
+        "description": "This portfolio project comprises two primary components. Firstly, an efficient motion tracking system built on OpenCV (Python) that utilizes a loadable kernel module (LKM) to automatically centre the largest moving object within the camera's field of view. Secondly, an AWS EC2 instance that retrieves and stores video footage from the camera while also hosting a secure website that allows users to download the videos. The project was designed with a focus on optimizing performance on a Raspberry Pi Zero, using a stepper motor and USB webcam.",
+        "contribution": "As the sole developer of this project, I developed the loadable kernel module (LKM) that enabled the motion tracker to work seamlessly and ensure that the largest moving object was always centred in the camera's frame. I also designed an efficient motion tracker and built a camera mount that allowed the solution to run effectively on a Raspberry Pi Zero.\nAdditionally, I configured the AWS EC2 instance to retrieve and store video footage from the camera and developed a secure website that enabled users to download these videos easily. My technical expertise and attention to detail were crucial to the successful completion of the project, and I'm proud of the impact my contributions will have.",
         "github": "https://github.com/adam-steven/Motion-Tracking-Camera"
     },
     {
@@ -157,8 +157,8 @@
         "platforms": ["python"],
         "date": "1/1/2021",
         "environment": "Education",
-        "description": "",
-        "contribution": "",
+        "description": "My honours project, this involved designing a 3D printer failure detection system that utilized OpenCV in Python. The project goal was to investigate various methods for detecting if a print in progress failed and devising ways to alert the user of the failure. The result, a software application that employed a camera facing the printer to detect any significant movement on the X-axis during printing. If movement was detected, the software would activate an audible alarm and send an email notification to the user. To validate the effectiveness of the system, I implemented the software on a Raspberry Pi 3 and tested it under real-world conditions as well as of 200 video samples. This project provided an excellent opportunity to implement the research and development techniques I had built up over my years at university.",
+        "contribution": "As the sole developer, I reviewed and improved on the pre-existing object detection system research, implementing best practises for the failure detection, GUI, and user alert software. I focused closely on integrating the software with the camera and other components. The final product was a reliable 3D printer failure detection system that met or exceeded all my initial project goals.",
         "github": "https://github.com/adam-steven/3D-Printer-Failure-Detection"
     },
     {
@@ -166,8 +166,8 @@
         "platforms": ["csharp", "mysql"],
         "date": "1/1/2019",
         "environment": "Education",
-        "description": "",
-        "contribution": "",
+        "description": "A peer-to-server messaging system using the C# .NET Framework. This system was designed to facilitate secure online communication, with a focus on preserving user privacy. To achieve this, the application implemented end-to-end and data-at-rest encryption. The messaging system allowed for private one-on-one conversations and notified users when they received new messages. Along with this, the messages were securely stored on a MySQL database, ensuring that users could access their previous conversations when logging in. The system supported multiple client applications that communicated with the server to transfer data securely to its intended recipient. Overall, this project demonstrated proficiency in C# programming and an understanding of secure messaging protocols.",
+        "contribution": "My contributions to this project included developing the GUI, creating the MySQL database, and implementing security measures to ensure user privacy. Specifically, I designed an intuitive user interface that facilitated seamless interaction with the messaging system, as well as created a MySQL database to securely store all user data, including encrypted messages. I implemented security measures, such as end-to-end and data-at-rest encryption, to protect user privacy. Additionally, I enabled secure data transfer between clients and the server using SimpleTCP. My expertise in C# programming, network programming, secure messaging protocols, and user experience design were instrumental in creating a functional, secure, and user-friendly messaging system.",
         "github": "https://github.com/adam-steven/Secure-Messaging-System"
     },
     {

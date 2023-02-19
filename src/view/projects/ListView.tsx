@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { v4 as uuidv4 } from 'uuid';
 
 import PlatformList from './PlatformList';
 import DetailsModal from './DetailsModal';
@@ -28,7 +27,7 @@ export default function ListView({platforms, workItems, togglePlatform, itemInVi
 
         {
           groupedWorkItems.map((group) => {
-            return <DateList key={uuidv4()} {...group} />
+            return <DateList key={group.year} {...group} />
           })
         }
       </div>

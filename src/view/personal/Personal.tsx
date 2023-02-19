@@ -1,7 +1,6 @@
 import React from 'react'
-import { v4 as uuidv4 } from 'uuid';
-import { loadPersonalData } from '../../controller/LoadData';
 
+import { loadPersonalData } from '../../controller/LoadData';
 import PersonalSectionProps from '../../model/PersonalSectionProps';
 import PersonalSection from './PersonalSection';
 
@@ -18,7 +17,7 @@ export default function personal() {
       
       {
         sections.map((item) => { 
-          return <PersonalSection key={uuidv4()} {...item}/>
+          return <PersonalSection key={item.id} {...item}/>
         })
       }
     </div>

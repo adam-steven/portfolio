@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { v4 as uuidv4 } from 'uuid';
 
 import PlatformList from './PlatformList';
 import ProjectList from './ProjectList';
@@ -19,7 +18,7 @@ export default function Projects({platforms, workItems, togglePlatform, itemInVi
           (Object.keys(Environment) as Array<keyof typeof Environment>).map((key) => { 
             const filteredItems: Array<WorkItem> = workItems.filter(item => item.environment === Environment[key]);
             const sortedItems: Array<WorkItem> = filteredItems.sort(function(a,b){ return new Date(b.date).getFullYear() - new Date(a.date).getFullYear(); })
-            return <ProjectList key={uuidv4()} environment={Environment[key]} workItems={sortedItems}/>
+            return <ProjectList key={key} environment={Environment[key]} workItems={sortedItems}/>
           })
         }
       </div>

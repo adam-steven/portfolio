@@ -17,7 +17,7 @@
     },
     {
         "folder": "ggj_2018",
-        "images": ["ggj2018.png"]
+        "images": ["gameplay.png", "homepage.jpg", "gameover.jpg", "group.jpg"]
     },
     {
         "folder": "ggj_2019",
@@ -33,7 +33,7 @@
     },
     {
         "folder": "gmtk_2021",
-        "images": []
+        "images": ["homepage.png", "enemies.png", "one_enemy.png", "gameover.png"]
     },
     {
         "folder": "infinite_runner",
@@ -57,11 +57,11 @@
     },
     {
         "folder": "outlook_add-in",
-        "images": []
+        "images": ["dashboard.png", "attachments.png", "form.png"]
     },
     {
         "folder": "physics_game",
-        "images": []
+        "images": ["homepage.png", "dodge.png", "fight.png", "gameover.png"]
     },
     {
         "folder": "portfolio_v2",
@@ -77,7 +77,7 @@
     },
     {
         "folder": "shareportals",
-        "images": []
+        "images": ["dashboard.png", "record.png", "kanban.png"]
     },
     {
         "folder": "word_scramble_game",

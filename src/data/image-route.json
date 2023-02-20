@@ -1,7 +1,7 @@
 [
     {
         "folder": "enemy_ai_test",
-        "images": ["aiGame.gif"]
+        "images": ["fightscene.png", "staticAi.png", "gunstart.png", "alert.png", "aiGame.gif"]
     },
     {
         "folder": "batch_audio_remover",
@@ -9,11 +9,11 @@
     },
     {
         "folder": "discord_bot",
-        "images": []
+        "images": ["playnow.png", "play.png", "search.png"]
     },
     {
         "folder": "emotion_recognition",
-        "images": ["emotionDetection.png"]
+        "images": ["happy.png", "dataset.png", "drag&drop.png", "fear.png", "surprise.png"]
     },
     {
         "folder": "ggj_2018",
@@ -21,11 +21,11 @@
     },
     {
         "folder": "ggj_2019",
-        "images": ["ggj2019.png"]
+        "images": ["ggj2019.png", "planetveiw.png", "pointer.png", "wideview.png", "controls.png"]
     },
     {
         "folder": "ggj_2022",
-        "images": []
+        "images": ["car.png", "game.png"]
     },
     {
         "folder": "ghj",
@@ -41,7 +41,7 @@
     },
     {
         "folder": "legacy_system_adapter",
-        "images": ["ninewells.png"]
+        "images": ["fileupload.png", "login.png", "importdateinput.png", "data.png"]
     },
     {
         "folder": "mac_printer_installer",
@@ -49,11 +49,11 @@
     },
     {
         "folder": "mobile_game",
-        "images": ["mobileGame.png"]
+        "images": ["start.png", "onplayermove.png", "onenemyspawn.png", "leaderboard.png"]
     },
     {
         "folder": "motion_tracking_camera",
-        "images": ["trackingCameraCloseUp.gif"]
+        "images": ["trackingCameraCloseUp.gif", "ideal.png", "detected.png", "upload.png", "website.png"]
     },
     {
         "folder": "outlook_add-in",
@@ -69,11 +69,11 @@
     },
     {
         "folder": "printer_failure_detection",
-        "images": ["printFailureDetection.png"]
+        "images": ["saturation.png", "contrastmask.png", "movementdetection.png", "cropping.png", "failures.png", "printFailureDetection.png"]
     },
     {
         "folder": "secure_messaging_system",
-        "images": ["secureMessageing.png"]
+        "images": ["secureMessageing.png", "structure.png", "relation.png"]
     },
     {
         "folder": "shareportals",
@@ -85,6 +85,6 @@
     },
     {
         "folder": "word_scroll_game",
-        "images": ["webGame.png"]
+        "images": ["start.png", "red.png", "emrald.png", "archive.png"]
     }
 ]

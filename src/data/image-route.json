@@ -37,7 +37,7 @@
     },
     {
         "folder": "infinite_runner",
-        "images": ["infiniteRunner.png"]
+        "images": ["game.png"]
     },
     {
         "folder": "legacy_system_adapter",

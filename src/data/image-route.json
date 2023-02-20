@@ -81,7 +81,7 @@
     },
     {
         "folder": "word_scramble_game",
-        "images": []
+        "images": ["homescreen.png", "ingame.png", "overtime.png", "gameover.png", "leaderboard.png"]
     },
     {
         "folder": "word_scroll_game",

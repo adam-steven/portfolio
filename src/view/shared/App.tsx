@@ -99,10 +99,6 @@ export default function App() {
     const data = button.getAttribute('data-bs-custom-data') ?? "";
     const dataObj: WorkItem = JSON.parse(data);
     setItemInView(dataObj);
-
-    //unfocus on click
-    const btn = document.activeElement as HTMLElement;
-    if(btn) { btn.blur(); }
   }
 
   function moveMouseBlob(event: PointerEvent, mouseBlob: HTMLElement) {

@@ -45,7 +45,7 @@
     },
     {
         "folder": "mac_printer_installer",
-        "images": []
+        "images": ["initailDesign.png", "newdesign.png", "notification.png"]
     },
     {
         "folder": "mobile_game",

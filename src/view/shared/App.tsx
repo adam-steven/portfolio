@@ -19,6 +19,8 @@ export default function App() {
   
   const location = useLocation();
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     if(document.querySelector(".personal-content")) { 
       window.addEventListener('load', decodeWelcomeEffect);
       window.addEventListener('scroll', personalSectionScroll);

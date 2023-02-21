@@ -5,6 +5,19 @@ body {
     font-family: "Space Mono", monospace;
 }
 
+.navbar {
+    background-color: #000000;
+    box-shadow: 0px 0px 22px 10px rgba($color: #fff, $alpha: 0.1);
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
+
+    .navbar-brand,
+    .btn-link {
+        color: white;
+        text-decoration: none;
+    }
+
+}
+
 .modal-content {
     background-color: #11111C;
 

@@ -22,7 +22,7 @@ export default function ListView({platforms, workItems, togglePlatform, itemInVi
 
   return (
     <>
-      <div className='projects-content'>
+      <div className={`projects-content ${!workItems.length ? "no-project-display" : ""}`}>
         <PlatformList platforms={platforms} togglePlatform={togglePlatform} />
 
         {
@@ -32,7 +32,7 @@ export default function ListView({platforms, workItems, togglePlatform, itemInVi
         }
       </div>
 
-      <Link to='/projects' id='list-view-btn' className="btn btn-primary switch-view-btn">Card View</Link>
+      <Link to='/projects' id='list-view-btn' className="btn btn-primary btn-lg switch-view-btn">Card View</Link>
       <DetailsModal {...itemInView} />
     </>
   )
@@ -41,14 +41,14 @@ export default function ListView({platforms, workItems, togglePlatform, itemInVi
 function DateList({...group}: WorkItemDateGroup) {
   return (
     <section className='project-section'>
-        <h3 className='my-2 mx-3'>{group.year.toString().charAt(0).toUpperCase() + group.year.toString().slice(1)}</h3>
-        <hr className='mx-3'/>
+        <h3 className='mx-3'>{group.year.toString().charAt(0).toUpperCase() + group.year.toString().slice(1)}</h3>
+        <hr className='mt-0 mx-3'/>
         <ul className='project-live-view-list'>
           {
             group.items.map((item) => {
               return (
                 <li key={item.id}>
-                  <button type='button' className="btn btn-link" data-bs-toggle="modal" data-bs-target="#projectModal" data-bs-custom-data={JSON.stringify(item)} title={item.name}>
+                  <button type='button' className="btn btn-link text-start project-list-link" data-bs-toggle="modal" data-bs-target="#projectModal" data-bs-custom-data={JSON.stringify(item)} title={item.name}>
                     {item.name}
                   </button>
                 </li>

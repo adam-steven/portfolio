@@ -15,7 +15,7 @@ export default function App() {
 
   const [itemInView, setItemInView] = useState(new WorkItem("", [], new Date(), Environment.Personal, "", "", ""));
   const [platforms, setPlatforms] = useState(loadPlatforms);
-  const [workItems, setWorkItems] = useState(loadWorkItems);
+  const [workItems, setWorkItems] = useState(new Array<WorkItem>());
   
   const location = useLocation();
   useEffect(() => {
@@ -49,7 +49,7 @@ export default function App() {
     const newWorkItems = loadWorkItems.filter(workItem => activePlatformsName.some(item => workItem.platforms.includes(item)));
 
     setPlatforms(newPlatforms);
-    setWorkItems(Boolean(newWorkItems.length) ? newWorkItems : loadWorkItems);
+    setWorkItems(newWorkItems);
   }
 
   function decodeWelcomeEffect() {

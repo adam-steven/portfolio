@@ -5,7 +5,6 @@ import PersonalSectionProps from '../../model/PersonalSectionProps';
 
 export default function PersonalSection({...props}: PersonalSectionProps) {
   const descriptionParagraphs = props.description.split("\n");
-  console.log(descriptionParagraphs);
 
   return (
     <section id={props.title}>

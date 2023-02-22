@@ -10,12 +10,19 @@ body {
     box-shadow: 0px 0px 22px 10px rgba($color: #fff, $alpha: 0.1);
     border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
 
-    .navbar-brand,
+    .navbar-brand {
+        color: white;
+        font-size: 1.75rem;
+    }
+
     .btn-link {
         color: white;
         text-decoration: none;
-    }
 
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .modal-content {
@@ -124,25 +131,24 @@ body {
     }
 
     #title-container {
-        margin-top: auto;
-        margin-left: 15vw;
+        margin: auto 15vmin 0 15vmin;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-end;
 
         h1 {
-            font-size: calc(2rem + 1.5vw);
+            font-size: calc(3.5rem + 1vmin);
         }
 
         small {
-            font-size: calc(0.1rem + 1.5vw);
+            font-size: calc(1.25rem + 1vmin);
         }
     }
 
     .personal-card {
         min-height: 40vh;
-        max-height: 80vh;
+        max-height: 70vh;
         min-width: 40vw;
         max-width: 50vw;
         background-color: black;
@@ -151,6 +157,14 @@ body {
         border-radius: 0.25rem;
         overflow: auto;
         z-index: 2;
+
+        h3 {
+            font-size: calc(1.3rem + 1vmin);
+        }
+
+        p {
+            font-size: calc(1rem + 0.25vmin);
+        }
     }
 
     .personal-background {
@@ -170,28 +184,37 @@ body {
 
     section {
         &.platform-section{
-            margin: 10vh 0 5vh 0;
+            margin: 10vh 0 -2rem 0;
+            padding: 0 5vw;
         }
 
         &.project-section {
             margin: 5vh 0;
+
+            h3 {
+                font-size: calc(1.3rem + 1vmin);
+            }
         }
     }
 
     .btn-platform-container {
-        margin: 0.5rem 2.5vw;
+        margin: 0.5rem 2vw;
 
         .btn-platform {
-            background-color: rgba($color: #fff, $alpha: 0);
-            border: none;
+            width: 6rem;
+            height: 6rem;
+            background-color: rgba($color: white, $alpha: 0.05);
+            border: 0.4rem solid rgba($color: white, $alpha: 0.01);
+            border-radius: 50%;
             transition: transform 0.2s, box-shadow 0.2s;
- 
+
             &:focus {
                transform: scale(1.2);
             }
 
             &.selected {
                 box-shadow: 0px 0px 8px 4px rgba($color: white, $alpha: 0.2);
+                border: 2px solid rgba($color: white, $alpha: 1);
             }
         }
 
@@ -204,13 +227,17 @@ body {
         }
     }
 
+    .platform-filter-text {
+        margin-top: 1rem;
+        margin-right: 2vw;
+    }
+
     .project-container {
         width: 100%;
         height: auto;
         padding: 1rem;
-        transition: height 0.1s;
-        background-color:  rgba($color: darkorchid, $alpha: 0.05);
-        box-shadow: 0px 0px 40px 40px rgba($color: darkorchid, $alpha: 0.05);
+        background-color:  rgba($color: darkorchid, $alpha: 0.04);
+        box-shadow: 0px 0px 40px 40px rgba($color: darkorchid, $alpha: 0.04);
         overflow: auto;
 
         display: flex;
@@ -236,19 +263,19 @@ body {
 
             &:hover, &:focus {
                 outline: none;
-                
+
+                .card-title{
+                    text-decoration: underline;
+                }
+
                 .card-img-top {
                     transform: scale(1.1);
-                }  
+                }
             }
-    
+
             &:active .card-img-top {
                 transform: scale(0.9);
             }
-        }
-
-        &:empty {
-            height: 2rem;
         }
     }
 
@@ -257,6 +284,60 @@ body {
         columns: 3;
         -webkit-columns: 3;
         -moz-columns: 3;
+        background-color:  rgba($color: darkorchid, $alpha: 0.04);
+        box-shadow: 0px 0px 40px 40px rgba($color: darkorchid, $alpha: 0.04);
+
+        .project-list-link {
+            font-size: calc(1rem + 0.25vmin);
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.projects-content.no-project-display {
+    section.platform-section {
+        margin: 10vh 0 -2rem 0;
+        padding: 0 5vw;
+        height: 90vh;
+    }
+
+    .btn-platform-container {
+        margin: 0.5rem 3vw;
+
+        .btn-platform {
+            width:  calc(6rem + 2.5vmin);
+            height: calc(6rem + 2.5vmin);
+            background-color: rgba($color: white, $alpha: 0.05);
+            border: 0.4rem solid rgba($color: white, $alpha: 0.01);
+            border-radius: 50%;
+            transition: transform 0.2s, box-shadow 0.2s;
+
+            &:focus {
+               transform: scale(1.2);
+            }
+
+            &.selected {
+                box-shadow: 0px 0px 8px 4px rgba($color: white, $alpha: 0.2);
+                border: 2px solid rgba($color: white, $alpha: 1);
+            }
+        }
+
+        &:hover .btn-platform {
+           transform: scale(1.2);
+        }
+
+        &:active .btn-platform {
+            transform: scale(0.8);
+        }
+
+        small {
+            font-size: calc(1rem + 0.25vmin);
+        }
     }
 }
 
@@ -267,6 +348,15 @@ body {
     bottom: 0;
     right: 0;
     margin: 2rem;
+    transition: transform 0.2s;
+
+    &:hover, &:focus {
+        transform: scale(1.2);
+    }
+
+    &:active {
+        transform: scale(0.8);
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -278,6 +368,14 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+    .projects-content {
+        .project-live-view-list {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+        }
+    }
+
 	.personal-content {
         .personal-card {
             max-width: 100vw;
@@ -291,18 +389,24 @@ body {
         .btn-platform-container {
             margin: 0.5rem 0.25rem;
         }
+
+        .project-live-view-list {
+            columns: 1;
+            -webkit-columns: 1;
+            -moz-columns: 1;
+        }
     }
 
     .personal-content {
         #title-container {
-            margin-left: 3rem;  
+            margin: 0rem 3rem;
 
             h1 {
-                font-size: calc(1.4rem + 1.5vw);
+                font-size: calc(2.5rem + 0.5vmin);
             }
-    
+
             small {
-                font-size: 0.8rem;
+                font-size: calc(0.75rem + 0.5vmin);
             }
         }
     }

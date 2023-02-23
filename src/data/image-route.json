@@ -65,7 +65,7 @@
     },
     {
         "folder": "portfolio_v2",
-        "images": []
+        "images": ["select.png", "cardview.png", "listview.png"]
     },
     {
         "folder": "printer_failure_detection",

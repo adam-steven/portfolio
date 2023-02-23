@@ -37,13 +37,17 @@ function PlatformItem({platform, togglePlatform}: PlatformItemProps) {
 
 function FilterText({platforms}: PlatformArray) {
   const activePlatforms: Array<Platform> = platforms.filter(platform => platform.filteringOn);
-  const activePlatformsName: Array<string> = activePlatforms.map(platform => platform.name);
+  const activePlatformNames: Array<string> = activePlatforms.map(platform => platform.name);
+
+  
+  const namesString = (activePlatformNames.length > 1) ? activePlatformNames.slice(0, -1).join(', ') + ` OR ${activePlatformNames.slice(-1)}` : activePlatformNames.slice(-1);
+  const shortNamesString = (activePlatformNames.length >= 3) ? activePlatformNames.slice(0, 2).join(', ') + `, OR ...` : namesString;
 
   if(!activePlatforms.length) { return null; }
 
   return (
     <div className={ `d-none d-lg-block w-100 platform-filter-text text-end`}>
-      <small className='opacity-50'>filter: {activePlatformsName.join(' OR ')}</small>
+      <small className='opacity-50' title={`filter: ${namesString}`}>filter: {shortNamesString}</small>
     </div>
   )
 }

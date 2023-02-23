@@ -25,7 +25,7 @@ export default function Projects({platforms, workItems, togglePlatform, itemInVi
         }
       </div>
 
-      <Link to='/list' id='list-view-btn' className="btn btn-primary btn-lg switch-view-btn">List View</Link>
+      <Link to='/list' id='list-view-btn' className={`btn btn-primary btn-lg switch-view-btn ${!workItems.length ? "d-none" : ""}`}>List View</Link>
       <DetailsModal {...itemInView}/>
     </>
   )

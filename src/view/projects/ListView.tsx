@@ -32,7 +32,7 @@ export default function ListView({platforms, workItems, togglePlatform, itemInVi
         }
       </div>
 
-      <Link to='/projects' id='list-view-btn' className="btn btn-primary btn-lg switch-view-btn">Card View</Link>
+      <Link to='/projects' id='list-view-btn' className={`btn btn-primary btn-lg switch-view-btn ${!workItems.length ? "d-none" : ""}`}>Card View</Link>
       <DetailsModal {...itemInView} />
     </>
   )

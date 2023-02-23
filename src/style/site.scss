@@ -213,7 +213,7 @@ body {
             }
 
             &.selected {
-                box-shadow: 0px 0px 8px 4px rgba($color: white, $alpha: 0.2);
+                box-shadow: 0px 0px 8px 4px rgba($color: white, $alpha: 0.3);
                 border: 2px solid rgba($color: white, $alpha: 1);
             }
         }
@@ -301,38 +301,17 @@ body {
 
 .projects-content.no-project-display {
     section.platform-section {
-        margin: 10vh 0 -2rem 0;
-        padding: 0 5vw;
-        height: 90vh;
+        margin: 4.5rem 0 0 0;
+        padding: 10vmin 5vw;
+        height: calc(100vh - 4.5rem);
     }
 
     .btn-platform-container {
-        margin: 0.5rem 3vw;
+        margin: 0.5rem 3.5vw;
 
         .btn-platform {
             width:  calc(6rem + 2.5vmin);
             height: calc(6rem + 2.5vmin);
-            background-color: rgba($color: white, $alpha: 0.05);
-            border: 0.4rem solid rgba($color: white, $alpha: 0.01);
-            border-radius: 50%;
-            transition: transform 0.2s, box-shadow 0.2s;
-
-            &:focus {
-               transform: scale(1.2);
-            }
-
-            &.selected {
-                box-shadow: 0px 0px 8px 4px rgba($color: white, $alpha: 0.2);
-                border: 2px solid rgba($color: white, $alpha: 1);
-            }
-        }
-
-        &:hover .btn-platform {
-           transform: scale(1.2);
-        }
-
-        &:active .btn-platform {
-            transform: scale(0.8);
         }
 
         small {
@@ -365,6 +344,12 @@ body {
             margin: 0.5rem 1vw;
         }
     }
+
+    .projects-content.no-project-display {
+        .btn-platform-container {
+            margin: 0.5rem 3vw;
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -373,6 +358,12 @@ body {
             columns: 2;
             -webkit-columns: 2;
             -moz-columns: 2;
+        }
+    }
+
+    .projects-content.no-project-display {
+        .btn-platform-container {
+            margin: 0.5rem 2.5vw;
         }
     }
 
@@ -394,6 +385,12 @@ body {
             columns: 1;
             -webkit-columns: 1;
             -moz-columns: 1;
+        }
+    }
+
+    .projects-content.no-project-display {
+        .btn-platform-container {
+            margin: 0.5rem 2vw;
         }
     }
 

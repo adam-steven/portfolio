@@ -16,6 +16,7 @@ export default function App() {
   const [itemInView, setItemInView] = useState(new WorkItem("", [], new Date(), Environment.Personal, "", "", ""));
   const [platforms, setPlatforms] = useState(loadPlatforms);
   const [workItems, setWorkItems] = useState(new Array<WorkItem>());
+  const [filtersStatus, setFilterStatus] = useState(false);
   
   const location = useLocation();
   useEffect(() => {
@@ -39,9 +40,19 @@ export default function App() {
 
   function togglePlatform(name: string) {
     const container = document.querySelector(".projects-content");
-    const animateConfig: KeyframeAnimationOptions =  { duration: 1000, fill: "forwards" }; 
+    const animateConfig: KeyframeAnimationOptions =  { duration: 500, fill: "forwards" }; 
 
-    if(!container) { return applyFilter(); }
+    //Toggle the click platform
+    const newPlatforms = [...platforms];
+    const platform = newPlatforms.find(platform => platform.name === name);
+    if(platform) { platform.filteringOn = !platform.filteringOn; }
+
+    //Update the work items to match the new filter
+    const activePlatforms = newPlatforms.filter(platform => platform.filteringOn);
+    const activePlatformsName: Array<string> = activePlatforms.map(platform => platform.name);
+    const newWorkItems = loadWorkItems.filter(workItem => activePlatformsName.some(item => workItem.platforms.includes(item)));
+
+    if(!container || filtersStatus === Boolean(newWorkItems.length)) { return applyFilter(); }
 
     const transitionAnim = transitionIn(container, animateConfig);
     transitionAnim.onfinish = () => { 
@@ -50,22 +61,13 @@ export default function App() {
     };
 
     function applyFilter() {
-      //Toggle the click platform
-      const newPlatforms = [...platforms];
-      const platform = newPlatforms.find(platform => platform.name === name);
-      if(platform) { platform.filteringOn = !platform.filteringOn; }
-
-      //Update the work items to match the new filter
-      const activePlatforms = newPlatforms.filter(platform => platform.filteringOn);
-      const activePlatformsName: Array<string> = activePlatforms.map(platform => platform.name);
-      const newWorkItems = loadWorkItems.filter(workItem => activePlatformsName.some(item => workItem.platforms.includes(item)));
-
       setPlatforms(newPlatforms);
       setWorkItems(newWorkItems);
+      setFilterStatus(Boolean(newWorkItems.length));
     }
 
     function transitionIn(container: Element, animateConfig: KeyframeAnimationOptions) {
-      return container.animate({ filter: 'blur(10rem)' }, animateConfig);
+      return container.animate({ filter: 'blur(15rem)' }, animateConfig);
     }
 
     function transitionOut(container: Element, animateConfig: KeyframeAnimationOptions) {

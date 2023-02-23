@@ -28,10 +28,10 @@ function PlatformItem({platform, togglePlatform}: PlatformItemProps) {
   }
 
   return (
-    <div className="btn-platform-container text-center">
-      <button type='button' onClick={handlePlatformClick} className={`btn btn-lg btn-platform platform-icon ${platform.name} ${platform.filteringOn ? "selected" : ""}`} title={`filter for ${platform.name}`} data-primary={platform.primary} data-filter={platform.filteringOn}></button>
+    <button type='button' onClick={handlePlatformClick} className="btn btn-platform-container text-center">
+      <div className={`btn btn-lg btn-platform platform-icon ${platform.name} ${platform.filteringOn ? "selected" : ""}`} title={`filter for ${platform.name}`} data-primary={platform.primary} data-filter={platform.filteringOn}></div>
       <small className='d-none d-lg-block opacity-75 fw-bold m-1'>{platform.name}</small>
-    </div>
+    </button>
   )
 }
 

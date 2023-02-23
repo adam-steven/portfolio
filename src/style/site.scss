@@ -110,7 +110,7 @@ body {
 
 .personal-content {
     section {
-        height: 80vh;
+        height: calc(100vh - 4.5rem);
 
         display: flex;
         -webkit-box-align: center;
@@ -123,10 +123,6 @@ body {
 
         &:nth-child(even) {
             justify-content: end;
-        }
-
-        &:last-child {
-            margin-bottom: 10vh;
         }
     }
 
@@ -148,7 +144,7 @@ body {
 
     .personal-card {
         min-height: 40vh;
-        max-height: 70vh;
+        max-height: calc(80vh - 4.5rem);
         min-width: 40vw;
         max-width: 50vw;
         background-color: black;
@@ -184,7 +180,7 @@ body {
 
     section {
         &.platform-section{
-            margin: 10vh 0 -2rem 0;
+            margin: calc(8vh + 4.5rem) 0 -2rem 0;
             padding: 0 5vw;
         }
 
@@ -199,18 +195,16 @@ body {
 
     .btn-platform-container {
         margin: 0.5rem 2vw;
+        outline: none !important;
+        border: none !important;
 
         .btn-platform {
-            width: 6rem;
-            height: 6rem;
+            width: calc(4rem + 2vmin);
+            height: calc(4rem + 2vmin);
             background-color: rgba($color: white, $alpha: 0.05);
             border: 0.4rem solid rgba($color: white, $alpha: 0.01);
             border-radius: 50%;
             transition: transform 0.2s, box-shadow 0.2s;
-
-            &:focus {
-               transform: scale(1.2);
-            }
 
             &.selected {
                 box-shadow: 0px 0px 8px 4px rgba($color: white, $alpha: 0.3);
@@ -218,12 +212,16 @@ body {
             }
         }
 
-        &:hover .btn-platform {
-           transform: scale(1.2);
+        &:hover,&:focus {
+            .btn-platform {
+                transform: scale(1.2);
+            }
         }
-
-        &:active .btn-platform {
-            transform: scale(0.8);
+ 
+        &:active {
+            .btn-platform {
+                transform: scale(0.8);
+            }
         }
     }
 

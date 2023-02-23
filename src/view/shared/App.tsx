@@ -38,18 +38,39 @@ export default function App() {
   }, [location]);
 
   function togglePlatform(name: string) {
-    //Toggle the click platform
-    const newPlatforms = [...platforms];
-    const platform = newPlatforms.find(platform => platform.name === name);
-    if(platform) { platform.filteringOn = !platform.filteringOn; }
+    const container = document.querySelector(".projects-content");
+    const animateConfig: KeyframeAnimationOptions =  { duration: 1000, fill: "forwards" }; 
 
-    //Update the work items to match the new filter
-    const activePlatforms = newPlatforms.filter(platform => platform.filteringOn);
-    const activePlatformsName: Array<string> = activePlatforms.map(platform => platform.name);
-    const newWorkItems = loadWorkItems.filter(workItem => activePlatformsName.some(item => workItem.platforms.includes(item)));
+    if(!container) { return applyFilter(); }
 
-    setPlatforms(newPlatforms);
-    setWorkItems(newWorkItems);
+    const transitionAnim = transitionIn(container, animateConfig);
+    transitionAnim.onfinish = () => { 
+      applyFilter();
+      transitionOut(container, animateConfig);
+    };
+
+    function applyFilter() {
+      //Toggle the click platform
+      const newPlatforms = [...platforms];
+      const platform = newPlatforms.find(platform => platform.name === name);
+      if(platform) { platform.filteringOn = !platform.filteringOn; }
+
+      //Update the work items to match the new filter
+      const activePlatforms = newPlatforms.filter(platform => platform.filteringOn);
+      const activePlatformsName: Array<string> = activePlatforms.map(platform => platform.name);
+      const newWorkItems = loadWorkItems.filter(workItem => activePlatformsName.some(item => workItem.platforms.includes(item)));
+
+      setPlatforms(newPlatforms);
+      setWorkItems(newWorkItems);
+    }
+
+    function transitionIn(container: Element, animateConfig: KeyframeAnimationOptions) {
+      return container.animate({ filter: 'blur(10rem)' }, animateConfig);
+    }
+
+    function transitionOut(container: Element, animateConfig: KeyframeAnimationOptions) {
+      return container.animate({ filter: 'blur(0rem)' }, animateConfig);
+    }
   }
 
   function decodeWelcomeEffect() {

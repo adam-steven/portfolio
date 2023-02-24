@@ -17,7 +17,7 @@ export default function PersonalSection({...props}: PersonalSectionProps) {
               })
             }
         </div>
-        <img className='personal-background pe-none' src={`asset/personal/${props.imagePath}`} alt={props.title} />
+        <img className='personal-background pe-none' src={`asset/a_personal/${props.imagePath}`} alt={props.title} />
     </section>
   )
 }

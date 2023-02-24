@@ -140,6 +140,7 @@ export default function App() {
     <div id="mouse-blob"></div>
     <Routes>
       <Route path="/" element={<Personal />} />
+      <Route path="/portfolio" element={<Personal />} />
       <Route path="/personal" element={<Personal />} />
       <Route path="/projects" element={<Projects platforms={platforms} workItems={workItems} togglePlatform={togglePlatform} itemInView={itemInView} />} />
       <Route path="/list" element={<ListView platforms={platforms} workItems={workItems} togglePlatform={togglePlatform} itemInView={itemInView} />} />

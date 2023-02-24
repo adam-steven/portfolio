@@ -150,7 +150,7 @@
         "environment": "Personal",
         "description": "This web portfolio was created using ReactJs to showcase some of my understanding of this popular JavaScript framework. As someone who frequently uses React for prototype development, I was eager to demonstrate my skills by building this functional website. And although I have not work on a full-scale project in React, hopefully this project highlights my ability to utilise ReactJs to create dynamic web applications. As a developer, I would be enthusiastic about the opportunity to apply my React expertise to a larger project and further expand my knowledge of this powerful framework.",
         "contribution": "",
-        "github": "https://github.com/adam-steven/portfolio_v2"
+        "github": "https://github.com/adam-steven/portfolio"
     },
     {
         "name": "Printer Failure Detection",
